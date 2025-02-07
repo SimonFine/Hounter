@@ -1,3 +1,93 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #1b1c57;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 72rem;
+}
+
+.label-semibold, .label-medium, .label-small, .label, .semibold-text, .medium-text, .subtitle, .heading-4, .heading-3, .heading-2, .heading-1 {
+  font-family: "Lexend", sans-serif;
+  color: #1b1c57;
+}
+
+.heading-4, .heading-3, .heading-2, .heading-1 {
+  text-transform: capitalize;
+}
+
+.heading-1 {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.heading-2 {
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+
+.heading-3 {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.heading-4 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.33;
+}
+
+.medium-text {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.semibold-text {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.71;
+}
+
+.label-small {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.label-medium {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.label-semibold {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -46,3 +46,8 @@ body {
     line-height: 1.5;
     color: $color-black;
 }
+
+.container {
+    display: grid;
+    grid-template-rows: 72rem;
+}
