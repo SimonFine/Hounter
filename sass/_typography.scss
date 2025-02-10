@@ -43,6 +43,13 @@
     line-height: 1.33;
 }
 
+.light-text {
+    @extend %regular-font;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
 .medium-text {
     @extend %regular-font;
     font-weight: 500;
