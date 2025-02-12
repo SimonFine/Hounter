@@ -202,7 +202,6 @@ body {
 }
 
 .house-card {
-  height: 54.5rem;
   width: 37.6rem;
 }
 .house-card:not(:last-child) {
@@ -270,9 +269,8 @@ body {
   padding-right: 12.4rem;
 }
 
-.top-bot-padding-120 {
+.top-padding-120 {
   padding-top: 12rem;
-  padding-bottom: 12rem;
 }
 
 .hero-section {
