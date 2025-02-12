@@ -1,7 +1,6 @@
 
 %regular-font {
     font-family: $font-primary;
-    color: $color-black;
 }
 
 %heading-font {
@@ -36,6 +35,10 @@
     @extend %heading-font;
     font-weight: 500;
     font-size: 2rem;
+
+    &--grey {
+        color: $color-grey3;
+    }
 }
 
 .subtitle {
@@ -69,6 +72,14 @@
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.71;
+
+    &--grey {
+        color: $color-grey2;
+    }
+
+    &--orange {
+        color: $color-secondary;
+    }
 }
 
 .label-small {

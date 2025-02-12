@@ -26,7 +26,6 @@ body {
 
 .label-semibold, .label-medium, .label-small, .label, .semibold-text, .medium-text, .light-text, .subtitle, .heading-4, .heading-3, .heading-2, .heading-1 {
   font-family: "Lexend", sans-serif;
-  color: #1b1c57;
 }
 
 .heading-4, .heading-3, .heading-2, .heading-1 {
@@ -55,6 +54,9 @@ body {
   font-weight: 500;
   font-size: 2rem;
 }
+.heading-4--grey {
+  color: #626687;
+}
 
 .subtitle {
   font-weight: 500;
@@ -82,6 +84,12 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.71;
+}
+.label--grey {
+  color: #888b97;
+}
+.label--orange {
+  color: #f59e0b;
 }
 
 .label-small {
@@ -120,24 +128,6 @@ body {
 .search-complex__input:focus {
   outline: none;
 }
-.search-complex__button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  border: none;
-  border-radius: 10rem;
-  padding: 1.2rem 2.4rem;
-  width: 15rem;
-  height: 4.8rem;
-  background-color: #10b981;
-}
-.search-complex__button:focus {
-  outline: none;
-}
-.search-complex__button > span {
-  color: #ffffff;
-}
 
 .card {
   display: flex;
@@ -165,12 +155,124 @@ body {
   margin-right: -2rem;
 }
 
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+  border-radius: 10rem;
+  padding: 1.2rem 2.4rem;
+  width: 15.6rem;
+  height: 4.8rem;
+  background-color: #10b981;
+  color: #ffffff;
+}
+.icon-button:focus {
+  outline: none;
+}
+.icon-button > span {
+  margin: auto;
+  color: inherit;
+}
+.icon-button--short {
+  width: 11.2rem;
+}
+.icon-button--dark-green {
+  background-color: #ffffff;
+  color: #0b9567;
+  border: 1px solid #0b9567;
+  border-radius: 10rem;
+}
+
+.circle-nav-btn {
+  background-color: #ffffff;
+  border: 1px solid #10b981;
+  border-radius: 10em;
+  padding: 1.2rem;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.circle-nav-btn--green {
+  background-color: #10b981;
+  color: #ffffff;
+}
+.circle-nav-btn:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.house-card {
+  height: 54.5rem;
+  width: 37.6rem;
+}
+.house-card:not(:last-child) {
+  margin-right: 3.2rem;
+}
+.house-card__picture {
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+.house-card__chip {
+  position: absolute;
+  display: flex;
+  bottom: 1.6rem;
+  left: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 3.2rem;
+  padding: 0.8rem 1.6rem;
+  height: 3.4rem;
+}
+.house-card__chip__icon {
+  margin-right: 0.8rem;
+}
+.house-card__chip--red {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+.house-card__chip--blue {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+.house-card__chip--green {
+  background-color: #d1fae5;
+  color: #0b9567;
+}
+.house-card__text {
+  margin-bottom: 2.4rem;
+}
+.house-card__person {
+  display: flex;
+  align-items: center;
+}
+.house-card__person__photo {
+  margin-right: 1.6rem;
+}
+
+.header-and-orange__stripe {
+  transform: translateY(-1rem);
+}
+.header-and-orange__orange {
+  transform: translateX(-3.5rem);
+}
+
 .margin-top-24 {
   margin-top: 2.4rem;
 }
 
 .margin-top-32 {
   margin-top: 3.2rem;
+}
+
+.left-right-padding-124 {
+  padding-left: 12.4rem;
+  padding-right: 12.4rem;
+}
+
+.top-bot-padding-120 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .hero-section {
@@ -182,7 +284,9 @@ body {
   background: radial-gradient(circle at left top, #82f7ff 0%, #82ffd2 1%, #ffffff 40%);
 }
 .hero-section__main__content {
-  padding: 20% 10vh;
+  padding-top: 18.2rem;
+  padding-left: 10rem;
+  padding-right: 12.4rem;
 }
 .hero-section__main__logos {
   display: flex;
@@ -209,6 +313,25 @@ body {
   width: 120rem;
   bottom: 4.8rem;
   left: 4.8rem;
+}
+
+.featured-house {
+  overflow: hidden;
+}
+.featured-house__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.6rem;
+}
+.featured-house__buttons {
+  display: flex;
+}
+.featured-house__buttons > li:not(:last-child) {
+  margin-right: 2.7rem;
+}
+.featured-house__cards {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -20,27 +20,6 @@
             outline: none;
         }
     }
-
-    &__button {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        cursor: pointer;
-        border: none;
-        border-radius: 10rem;
-        padding: 1.2rem 2.4rem;
-        width: 15rem;
-        height: 4.8rem;
-        background-color: $color-primary;
-
-        &:focus {
-            outline: none;
-        }
-
-        & > span {
-            color: $color-white;
-        }
-    }
 }
 
 .card {
@@ -70,5 +49,122 @@
         &:not(:last-child) {
             margin-right: -2rem;
         }
+    }
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+    border-radius: 10rem;
+    padding: 1.2rem 2.4rem;
+    width: 15.6rem;
+    height: 4.8rem;
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:focus {
+        outline: none;
+    }
+    
+    & > span {
+        margin: auto;
+        color: inherit;
+    }
+
+    &--short {
+        width: 11.2rem;
+    }
+
+    &--dark-green {
+        background-color: $color-white;
+        color: $color-primary-dark;
+        border: 1px solid $color-primary-dark;
+        border-radius: 10rem;
+    }
+}
+
+.circle-nav-btn {
+    background-color: $color-white;
+    border: 1px solid $color-primary;
+    border-radius: 10em;
+    padding: 1.2rem;
+    width: 4.8rem;
+    height: 4.8rem;
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
+    &:not(:last-child) { margin-right: 1.6rem; }
+}
+
+.house-card {
+    height: 54.5rem;
+    width: 37.6rem;
+
+    &:not(:last-child) {
+        margin-right: 3.2rem;
+    }
+
+    &__picture {
+        position: relative;
+        margin-bottom: 2.4rem;
+    }
+
+    &__chip {
+        position: absolute;
+        display: flex;
+        bottom: 1.6rem;
+        left: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 3.2rem;
+        padding: .8rem 1.6rem;
+        height: 3.4rem;
+
+        &__icon { margin-right: .8rem; }
+        
+        &--red {
+            background-color: $color-danger-light;
+            color: $color-danger;
+        }
+
+        &--blue {
+            background-color: $color-info-light;
+            color: $color-info;
+        }
+
+        &--green {
+            background-color: $color-primary-light;
+            color: $color-primary-dark;
+        }
+    }
+
+    &__text {
+        margin-bottom: 2.4rem;
+    }
+
+    &__person {
+        display: flex;
+        align-items: center;
+
+        &__photo {
+            margin-right: 1.6rem;
+        }
+    }
+}
+
+.header-and-orange {    
+    &__stripe {
+        transform: translateY(-1rem);
+    }
+
+    &__orange {
+        transform: translateX(-3.5rem);
     }
 }

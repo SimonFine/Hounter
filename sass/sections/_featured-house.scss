@@ -1,0 +1,22 @@
+.featured-house {  
+    overflow: hidden;
+      
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3.6rem;
+    }
+
+    &__buttons {
+        display: flex;
+
+        & > li:not(:last-child) {
+            margin-right: 2.7rem;
+        }
+    }
+
+    &__cards {
+        display: flex;
+    }
+}
