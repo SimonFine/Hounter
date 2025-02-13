@@ -197,3 +197,37 @@
         left: 50%;
     }
 }
+
+.testimonial {
+    position: relative;
+    width: 78.4rem;
+    margin: 0 3.2rem;
+
+    &__card {
+        position: absolute;
+        bottom: -7.6rem;
+        left: 50%;
+        width: 80%;
+        transform: translateX(-50%);
+        padding: 3.2rem;
+        background-color: $color-white;
+        border-radius: 1.6rem;
+        box-shadow: 0 8px 3.2rem 0 rgba(12, 21, 55, 0.09);
+        width: 78%;
+    }
+
+    &__user-review {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+
+        & > img {
+            margin-right: 1.6rem;
+        }
+    }
+}
