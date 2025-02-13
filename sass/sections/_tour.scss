@@ -1,9 +1,11 @@
 .tour {
     display: flex;
+    position: relative;
 
     &__left {
         flex: 1;
         width: 50%;
+        padding-right: 10rem;
 
         &__details {
             display: grid;
@@ -22,8 +24,12 @@
             }
         }
 
-        &__divider {
-
+        &__contact {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 3.2rem;
+            border-top: 2px solid $color-grey1;
         }
     }
 
@@ -49,5 +55,24 @@
             bottom: -4.3rem;
             left: -5rem;
         }    
+    }
+
+    &__blur {
+        position: absolute;
+        width: 60rem;
+        height: 60rem;
+        z-index: -100;
+
+        &--yellow {
+            top: -15rem;
+            right: 0;
+            background: radial-gradient(circle at 80% 50%, #ff998293 0%, transparent 50%);
+        }
+
+        &--orange {
+            top: 0;
+            right: 0;
+            background: radial-gradient(circle at 100% 50%, #fffb82ba 0%, transparent 50%);
+        }
     }
 }

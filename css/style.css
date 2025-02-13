@@ -184,6 +184,9 @@ body {
 .icon-button--short {
   width: 11.2rem;
 }
+.icon-button--long {
+  width: 17.1rem;
+}
 .icon-button--dark-green {
   background-color: #ffffff;
   color: #0b9567;
@@ -247,11 +250,12 @@ body {
 .house-card__text {
   margin-bottom: 2.4rem;
 }
-.house-card__person {
+
+.person-info {
   display: flex;
   align-items: center;
 }
-.house-card__person__photo {
+.person-info__photo {
   margin-right: 1.6rem;
 }
 
@@ -310,8 +314,8 @@ body {
 }
 .hero-section__main__content {
   padding-top: 18.2rem;
-  padding-left: 10rem;
-  padding-right: 12.4rem;
+  padding-right: 10rem;
+  padding-left: 12.4rem;
 }
 .hero-section__main__logos {
   display: flex;
@@ -361,10 +365,12 @@ body {
 
 .tour {
   display: flex;
+  position: relative;
 }
 .tour__left {
   flex: 1;
   width: 50%;
+  padding-right: 10rem;
 }
 .tour__left__details {
   display: grid;
@@ -379,6 +385,13 @@ body {
 }
 .tour__left__detail > img:not(:last-child) {
   margin-right: 1.6rem;
+}
+.tour__left__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3.2rem;
+  border-top: 2px solid #e0e3eb;
 }
 .tour__right {
   flex: 1;
@@ -399,6 +412,22 @@ body {
   position: absolute;
   bottom: -4.3rem;
   left: -5rem;
+}
+.tour__blur {
+  position: absolute;
+  width: 60rem;
+  height: 60rem;
+  z-index: -100;
+}
+.tour__blur--yellow {
+  top: -15rem;
+  right: 0;
+  background: radial-gradient(circle at 80% 50%, rgba(255, 153, 130, 0.5764705882) 0%, transparent 50%);
+}
+.tour__blur--orange {
+  top: 0;
+  right: 0;
+  background: radial-gradient(circle at 100% 50%, rgba(255, 251, 130, 0.7294117647) 0%, transparent 50%);
 }
 
 /*# sourceMappingURL=style.css.map */
