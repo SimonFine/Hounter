@@ -36,9 +36,7 @@
     font-weight: 500;
     font-size: 2rem;
 
-    &--grey3 {
-        color: $color-grey3;
-    }
+    &--grey3 { color: $color-grey3; }
 }
 
 .subtitle {
@@ -54,9 +52,7 @@
     font-size: 1.6rem;
     line-height: 1.5;
 
-    &--grey2 {
-        color: $color-grey2
-    }
+    &--grey2 { color: $color-grey2; }
 }
 
 .medium-text {
@@ -64,9 +60,7 @@
     font-weight: 500;
     font-size: 1.6rem;
 
-    &--grey3 {
-        color: $color-grey3
-    }
+    &--grey3 { color: $color-grey3; }
 }
 
 .semibold-text {
@@ -81,19 +75,19 @@
     font-size: 1.4rem;
     line-height: 1.71;
 
-    &--grey2 {
-        color: $color-grey2;
-    }
+    &--grey2 { color: $color-grey2; }
 
-    &--orange {
-        color: $color-secondary;
-    }
+    &--grey3 { color: $color-grey3; }
+
+    &--orange { color: $color-secondary; }
 }
 
 .label-small {
     @extend %regular-font;
     font-weight: 400;
     font-size: 1.2rem;
+
+    &--grey2 { color: $color-grey2; }
 }
 
 .label-medium {
