@@ -266,6 +266,13 @@ body {
   transform: translateX(-3.5rem);
 }
 
+.header-and-orange-vertical {
+  text-align: center;
+}
+.header-and-orange-vertical__stripe {
+  display: block;
+}
+
 .play-button {
   cursor: pointer;
   width: 4.8rem;

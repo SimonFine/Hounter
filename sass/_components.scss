@@ -162,13 +162,21 @@
     }
 }
 
-.header-and-orange {    
+.header-and-orange {  
     &__stripe {
         transform: translateY(-1rem);
     }
 
     &__orange {
         transform: translateX(-3.5rem);
+    }
+}
+
+.header-and-orange-vertical {
+    text-align: center;
+
+    &__stripe {
+        display: block;
     }
 }
 
