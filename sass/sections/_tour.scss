@@ -1,0 +1,42 @@
+.tour {
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        flex: 1;
+        &__details {
+
+        }
+
+        &__detail {
+
+        }
+
+        &__divider {
+
+        }
+    }
+
+    &__right {
+        flex: 1;
+        text-align: center;
+        
+        &__house {
+            position: relative;
+            display: inline-block;
+
+            & > button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        &__images {
+            position: absolute;
+            bottom: -4.3rem;
+            left: -5rem;
+        }    
+    }
+}

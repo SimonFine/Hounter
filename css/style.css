@@ -256,6 +256,23 @@ body {
   transform: translateX(-3.5rem);
 }
 
+.play-button {
+  cursor: pointer;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  position: relative;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+}
+.play-button__icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
 .margin-top-24 {
   margin-top: 2.4rem;
 }
@@ -330,6 +347,33 @@ body {
 }
 .featured-house__cards {
   display: flex;
+}
+
+.tour {
+  display: flex;
+  justify-content: space-between;
+}
+.tour__left {
+  flex: 1;
+}
+.tour__right {
+  flex: 1;
+  text-align: center;
+}
+.tour__right__house {
+  position: relative;
+  display: inline-block;
+}
+.tour__right__house > button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tour__right__images {
+  position: absolute;
+  bottom: -4.3rem;
+  left: -5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
