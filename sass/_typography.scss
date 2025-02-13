@@ -36,7 +36,7 @@
     font-weight: 500;
     font-size: 2rem;
 
-    &--grey {
+    &--grey3 {
         color: $color-grey3;
     }
 }
@@ -53,12 +53,20 @@
     font-weight: 300;
     font-size: 1.6rem;
     line-height: 1.5;
+
+    &--grey2 {
+        color: $color-grey2
+    }
 }
 
 .medium-text {
     @extend %regular-font;
     font-weight: 500;
     font-size: 1.6rem;
+
+    --grey3 {
+        color: $color-grey3
+    }
 }
 
 .semibold-text {
@@ -73,7 +81,7 @@
     font-size: 1.4rem;
     line-height: 1.71;
 
-    &--grey {
+    &--grey2 {
         color: $color-grey2;
     }
 
