@@ -54,7 +54,7 @@ body {
   font-weight: 500;
   font-size: 2rem;
 }
-.heading-4--grey {
+.heading-4--grey3 {
   color: #626687;
 }
 
@@ -69,10 +69,16 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
 }
+.light-text--grey2 {
+  color: #888b97;
+}
 
 .medium-text {
   font-weight: 500;
   font-size: 1.6rem;
+}
+.medium-text--grey3 {
+  color: #626687;
 }
 
 .semibold-text {
@@ -85,7 +91,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.71;
 }
-.label--grey {
+.label--grey2 {
   color: #888b97;
 }
 .label--orange {
@@ -273,6 +279,10 @@ body {
   left: 50%;
 }
 
+.margin-top-16 {
+  margin-top: 1.6rem;
+}
+
 .margin-top-24 {
   margin-top: 2.4rem;
 }
@@ -351,13 +361,28 @@ body {
 
 .tour {
   display: flex;
-  justify-content: space-between;
 }
 .tour__left {
   flex: 1;
+  width: 50%;
+}
+.tour__left__details {
+  display: grid;
+  grid-template-columns: repeat(2, 19.3rem);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 5.3rem;
+  row-gap: 1.6rem;
+}
+.tour__left__detail {
+  display: flex;
+  align-items: center;
+}
+.tour__left__detail > img:not(:last-child) {
+  margin-right: 1.6rem;
 }
 .tour__right {
   flex: 1;
+  width: 50%;
   text-align: center;
 }
 .tour__right__house {
