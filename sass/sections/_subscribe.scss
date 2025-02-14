@@ -1,0 +1,71 @@
+.subscribe {
+
+    &__banner {
+        position: relative;
+        height: 31.2rem;
+        background: url("/img/subscribe/banner.png");
+        background-size: cover;
+        border-radius: 3rem;       
+    }
+
+    &__form {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 41.6%;
+
+        & > p {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+    }
+
+    &__left1-pic {
+        position: absolute;
+        top: 3.8rem;
+        left: 4rem;
+    }
+
+    &__left2-pic {
+        position: absolute;
+        top: 7.1rem;
+        left: 20rem;
+    }
+
+    &__left3-pic {
+        position: absolute;
+        top: 17.3rem;
+        left: 6.3rem;
+    }
+
+    &__left4-pic {
+        position: absolute;
+        top: 17.8rem;
+        left: 19.1rem;
+    }
+
+    &__right1-pic {
+        position: absolute;
+        top: 4.4rem;
+        right: 19.6rem;
+    }
+
+    &__right2-pic {
+        position: absolute;
+        top: 10.7rem;
+        right: 7.8rem;
+    }
+
+    &__right3-pic {
+        position: absolute;
+        top: 14.3rem;
+        right: 19.6rem;
+    }
+
+    &__right4-pic {
+        position: absolute;
+        top: 19.7rem;
+        right: 6.9rem;
+    }
+}
