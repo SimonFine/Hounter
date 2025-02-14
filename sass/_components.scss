@@ -178,6 +178,10 @@
     &__stripe {
         display: block;
     }
+
+    & > button {
+        margin: 1.6rem auto;
+    }
 }
 
 .play-button {

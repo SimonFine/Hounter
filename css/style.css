@@ -278,6 +278,9 @@ body {
 .header-and-orange-vertical__stripe {
   display: block;
 }
+.header-and-orange-vertical > button {
+  margin: 1.6rem auto;
+}
 
 .play-button {
   cursor: pointer;
@@ -481,11 +484,65 @@ body {
   background: radial-gradient(circle at 100% 50%, rgba(255, 251, 130, 0.7294117647) 0%, transparent 50%);
 }
 
+.testimonials {
+  overflow: hidden;
+}
 .testimonials__slider {
   height: 50.5rem;
   max-width: 78.4rem;
   margin: 0 auto;
   position: relative;
+}
+
+.find-more-articles {
+  display: flex;
+}
+.find-more-articles__small {
+  flex: 1;
+  width: 50%;
+  padding-right: 1.6rem;
+}
+.find-more-articles__small__article {
+  height: 14.8rem;
+  display: flex;
+  align-items: center;
+}
+.find-more-articles__small__article > img {
+  margin-right: 3.2rem;
+}
+.find-more-articles__small__article:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+.find-more-articles__big {
+  flex: 1;
+  width: 50%;
+  padding-left: 1.6rem;
+}
+.find-more-articles__big > img {
+  margin-bottom: 2.4rem;
+}
+.find-more-articles__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.find-more-articles__description__person {
+  display: flex;
+  align-items: center;
+}
+.find-more-articles__description__person > img {
+  margin-right: 1.6rem;
+}
+.find-more-articles__description > p {
+  margin-top: 1.2rem;
+}
+.find-more-articles__description__time {
+  display: flex;
+  align-items: center;
+  margin-top: 1.6rem;
+}
+.find-more-articles__description__time > img {
+  margin-right: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
