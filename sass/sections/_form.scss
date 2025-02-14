@@ -1,0 +1,42 @@
+.form {
+    display: flex;
+    height: 68.2rem;
+
+    &__label {
+        width: 10.6rem;
+    }
+
+    &__left, &__right {
+        box-shadow: 0 .8rem 3.2rem 0 rgba(12, 21, 55, 0.09);
+        padding: 4rem;
+        border-radius: .8rem;
+    }
+
+    &__left {
+        width: 41%;
+        margin-right: 1.6rem;
+    }
+
+    &__right {
+        width: 59%;
+        margin-left: 1.6rem;
+
+        &__row {
+            display: flex;
+
+            &:not(:first-child) {
+                margin-top: 2.8rem;
+            }
+
+            & > p {
+                margin-top: 1.6rem;
+            }
+        }
+
+        &__consent {
+            margin-top: 2.8rem;
+            margin-left: 10.6rem;
+            display: flex;
+        }
+    }
+}
