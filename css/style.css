@@ -379,6 +379,27 @@ body {
   display: none;
 }
 
+.button-small {
+  border: 1px solid #ffffff;
+  border-radius: 10rem;
+  padding: 0.8rem 1.6rem;
+  width: 10.2rem;
+  height: 3.4rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  margin-right: 2.4rem;
+}
+
+.button-big {
+  border: 1px solid #0b9567;
+  border-radius: 10rem;
+  padding: 1.2rem 2.4rem;
+  width: 11.8rem;
+  height: 4.8rem;
+  background-color: #d1fae5;
+  color: #0b9567;
+}
+
 .margin-top-16 {
   margin-top: 1.6rem;
 }
@@ -407,8 +428,19 @@ body {
   padding-top: 12rem;
 }
 
+.navbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  top: 3.9rem;
+  width: 100%;
+}
+
 .hero-section {
   display: flex;
+  position: relative;
 }
 .hero-section__main {
   flex: 1;
