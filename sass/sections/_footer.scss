@@ -1,0 +1,60 @@
+.footer {
+    display: flex;
+    padding-bottom: 12rem;
+    position: relative;
+
+    &__left {
+        width: 41%;
+        margin-right: 1.6rem;
+
+        & > p {
+            margin-top: 1.6rem;
+        }
+    }
+
+    &__logos {
+        margin-top: 2.4rem;
+        display: flex;
+
+        & > img {
+            margin-right: 2.4rem;
+        }
+    }
+
+    &__right {
+        display: flex;
+        width: 59%;
+        margin-left: 1.6rem;
+        justify-content: space-between;
+    }
+
+    &__column {
+
+        & > .subtitle {
+            margin-bottom: 2.4rem;
+        }
+
+        & > .label:not(:first-child) {
+            margin-top: 1.6rem;
+        }
+    }
+
+    &__blur {
+        position: absolute;
+        width: 60rem;
+        height: 60rem;
+        z-index: -100;
+
+        &--green {
+            top: -10rem;
+            right: 0;
+            background: radial-gradient(circle at 60% 60%, #b8ff829e 0%, transparent 50%);
+        }
+
+        &--blue {
+            top: -10rem;
+            right: 0;
+            background: radial-gradient(circle at 100% 50%, #82baff91 0%, transparent 40%);
+        }
+    }
+}
