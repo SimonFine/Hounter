@@ -1,23 +1,10 @@
-.icon-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    border: none;
-    border-radius: 10rem;
-    padding: 1.2rem 2.4rem;
-    width: 15.6rem;
-    height: 4.8rem;
-    background-color: $color-primary;
-    color: $color-white;
+@use "../mixins";
 
-    &:focus {
-        outline: none;
-    }
+.btn {
+    @include btn-style($color-primary, $color-white);
     
     & > span {
         margin: auto;
-        color: inherit;
     }
 
     &--short {
@@ -32,7 +19,6 @@
         background-color: $color-white;
         color: $color-primary-dark;
         border: 1px solid $color-primary-dark;
-        border-radius: 10rem;
     }
 }
 
@@ -49,16 +35,29 @@
         color: $color-white;
     }
 
-    &:not(:last-child) { margin-right: 1.6rem; }
+    &:first-child { margin-right: 1.6rem; }
 }
 
-.play-button {
+.btn-small {
+    @include btn-style(transparent, $color-white, 1px solid $color-white);
+    padding: .8rem 1.6rem;
+    width: 10.2rem;
+    height: 3.4rem;
+    margin-right: 2.4rem;
+}
+
+.btn-big {
+    @include btn-style($color-primary-light, $color-primary-dark, 1px solid $color-primary-dark);
+    width: 11.8rem;
+    height: 4.8rem;
+}
+
+.play-btn {
     cursor: pointer;
     width: 4.8rem;
     height: 4.8rem;
     border: none;
     position: relative;
-    border-radius: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(3px);
 
@@ -68,25 +67,4 @@
         top: 50%;
         left: 50%;
     }
-}
-
-.button-small {
-    border: 1px solid $color-white;
-    border-radius: 10rem;
-    padding: .8rem 1.6rem;
-    width: 10.2rem;
-    height: 3.4rem;
-    background: rgba(255, 255, 255, 0.1);
-    color: $color-white;
-    margin-right: 2.4rem;
-}
-
-.button-big {
-    border: 1px solid $color-primary-dark;
-    border-radius: 10rem;
-    padding: 1.2rem 2.4rem;
-    width: 11.8rem;
-    height: 4.8rem;
-    background-color: $color-primary-light;
-    color: $color-primary-dark;
 }

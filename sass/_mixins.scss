@@ -1,0 +1,18 @@
+@mixin btn-style($bg-color, $color, $border: none) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    border: $border;
+    border-radius: 10rem;
+    padding: 1.2rem 2.4rem;
+    height: 4.8rem;
+    width: 15.6rem;
+    background-color: $bg-color;
+    color: $color;
+    outline: none;
+
+    &:focus {
+        outline: none;
+    }
+}

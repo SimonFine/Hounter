@@ -125,37 +125,36 @@ body {
   font-size: 1.4rem;
 }
 
-.icon-button {
+.btn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   cursor: pointer;
   border: none;
   border-radius: 10rem;
   padding: 1.2rem 2.4rem;
-  width: 15.6rem;
   height: 4.8rem;
+  width: 15.6rem;
   background-color: #10b981;
   color: #ffffff;
-}
-.icon-button:focus {
   outline: none;
 }
-.icon-button > span {
-  margin: auto;
-  color: inherit;
+.btn:focus {
+  outline: none;
 }
-.icon-button--short {
+.btn > span {
+  margin: auto;
+}
+.btn--short {
   width: 11.2rem;
 }
-.icon-button--long {
+.btn--long {
   width: 17.1rem;
 }
-.icon-button--dark-green {
+.btn--dark-green {
   background-color: #ffffff;
   color: #0b9567;
   border: 1px solid #0b9567;
-  border-radius: 10rem;
 }
 
 .circle-nav-btn {
@@ -170,46 +169,66 @@ body {
   background-color: #10b981;
   color: #ffffff;
 }
-.circle-nav-btn:not(:last-child) {
+.circle-nav-btn:first-child {
   margin-right: 1.6rem;
 }
 
-.play-button {
+.btn-small {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 10rem;
+  padding: 1.2rem 2.4rem;
+  height: 4.8rem;
+  width: 15.6rem;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  padding: 0.8rem 1.6rem;
+  width: 10.2rem;
+  height: 3.4rem;
+  margin-right: 2.4rem;
+}
+.btn-small:focus {
+  outline: none;
+}
+
+.btn-big {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  border: 1px solid #0b9567;
+  border-radius: 10rem;
+  padding: 1.2rem 2.4rem;
+  height: 4.8rem;
+  width: 15.6rem;
+  background-color: #d1fae5;
+  color: #0b9567;
+  outline: none;
+  width: 11.8rem;
+  height: 4.8rem;
+}
+.btn-big:focus {
+  outline: none;
+}
+
+.play-btn {
   cursor: pointer;
   width: 4.8rem;
   height: 4.8rem;
   border: none;
   position: relative;
-  border-radius: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(3px);
 }
-.play-button__icon {
+.play-btn__icon {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-}
-
-.button-small {
-  border: 1px solid #ffffff;
-  border-radius: 10rem;
-  padding: 0.8rem 1.6rem;
-  width: 10.2rem;
-  height: 3.4rem;
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  margin-right: 2.4rem;
-}
-
-.button-big {
-  border: 1px solid #0b9567;
-  border-radius: 10rem;
-  padding: 1.2rem 2.4rem;
-  width: 11.8rem;
-  height: 4.8rem;
-  background-color: #d1fae5;
-  color: #0b9567;
 }
 
 .card {
@@ -454,7 +473,6 @@ body {
 .navbar {
   position: absolute;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   z-index: 100;
   top: 3.9rem;
@@ -463,6 +481,7 @@ body {
 .navbar__buttons {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 .navbar a {
   text-decoration: none;
