@@ -6,4 +6,12 @@
     z-index: 100;
     top: 3.9rem;
     width: 100%;
+
+    &__buttons {
+        list-style: none;
+        display: flex;
+
+    }
+
+    a { text-decoration: none; }
 }

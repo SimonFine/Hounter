@@ -88,6 +88,9 @@ body {
   font-weight: 600;
   font-size: 1.6rem;
 }
+.semibold-text--primary-dark {
+  color: #0b9567;
+}
 
 .label {
   font-weight: 400;
@@ -400,6 +403,27 @@ body {
   color: #0b9567;
 }
 
+.cookie-banner {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 2.4rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2.8rem;
+  padding: 1.6rem 4rem;
+  width: 46.5rem;
+  height: 5.6rem;
+  background-color: #d1fae5;
+}
+.cookie-banner__left {
+  display: flex;
+  align-items: center;
+}
+.cookie-banner__left > img {
+  margin-right: 1.2rem;
+}
+
 .margin-top-16 {
   margin-top: 1.6rem;
 }
@@ -436,6 +460,13 @@ body {
   z-index: 100;
   top: 3.9rem;
   width: 100%;
+}
+.navbar__buttons {
+  list-style: none;
+  display: flex;
+}
+.navbar a {
+  text-decoration: none;
 }
 
 .hero-section {

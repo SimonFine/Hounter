@@ -69,6 +69,10 @@
     @extend %regular-font;
     font-weight: 600;
     font-size: 1.6rem;
+
+    &--primary-dark {
+        color: $color-primary-dark;
+    }
 }
 
 .label {
