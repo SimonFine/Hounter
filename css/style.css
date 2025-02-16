@@ -125,65 +125,6 @@ body {
   font-size: 1.4rem;
 }
 
-.input, .select {
-  border: 1px solid #e0e3eb;
-  border-radius: 2.8rem;
-  padding: 1.6rem 2.4rem;
-  width: 100%;
-  height: 5.6rem;
-  background-color: #ffffff;
-}
-.input:focus, .select:focus {
-  outline: none;
-}
-
-.search-complex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #e0e3eb;
-  border-radius: 2.8rem;
-  background-color: #ffffff;
-  padding: 0.4rem 0.4rem 0.4rem 2.4rem;
-  height: 5.6rem;
-}
-.search-complex__input {
-  margin-left: 2rem;
-  border: none;
-  transition: all 0.2s;
-  width: 50%;
-  margin-right: auto;
-}
-.search-complex__input:focus {
-  outline: none;
-}
-
-.card {
-  display: flex;
-  width: fit-content;
-  background-color: #ffffff;
-  margin-right: 1.6rem;
-  align-items: center;
-  border-radius: 3.2rem;
-  padding: 2.4rem;
-  height: 10.4rem;
-  box-shadow: 0 11rem 48rem 0 rgba(51, 51, 51, 0.06);
-}
-.card__images {
-  display: flex;
-  margin-right: 1.6rem;
-}
-.card__photo {
-  height: 5.6rem;
-  width: 5.6rem;
-  box-sizing: border-box;
-  border-radius: 50%;
-  border: 3px solid #fff;
-}
-.card__photo:not(:last-child) {
-  margin-right: -2rem;
-}
-
 .icon-button {
   display: flex;
   align-items: center;
@@ -233,6 +174,70 @@ body {
   margin-right: 1.6rem;
 }
 
+.play-button {
+  cursor: pointer;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  position: relative;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+}
+.play-button__icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.button-small {
+  border: 1px solid #ffffff;
+  border-radius: 10rem;
+  padding: 0.8rem 1.6rem;
+  width: 10.2rem;
+  height: 3.4rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  margin-right: 2.4rem;
+}
+
+.button-big {
+  border: 1px solid #0b9567;
+  border-radius: 10rem;
+  padding: 1.2rem 2.4rem;
+  width: 11.8rem;
+  height: 4.8rem;
+  background-color: #d1fae5;
+  color: #0b9567;
+}
+
+.card {
+  display: flex;
+  width: fit-content;
+  background-color: #ffffff;
+  margin-right: 1.6rem;
+  align-items: center;
+  border-radius: 3.2rem;
+  padding: 2.4rem;
+  height: 10.4rem;
+  box-shadow: 0 11rem 48rem 0 rgba(51, 51, 51, 0.06);
+}
+.card__images {
+  display: flex;
+  margin-right: 1.6rem;
+}
+.card__photo {
+  height: 5.6rem;
+  width: 5.6rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.card__photo:not(:last-child) {
+  margin-right: -2rem;
+}
+
 .house-card {
   width: 37.6rem;
 }
@@ -274,48 +279,6 @@ body {
   margin-bottom: 2.4rem;
 }
 
-.person-info {
-  display: flex;
-  align-items: center;
-}
-.person-info__photo {
-  margin-right: 1.6rem;
-}
-
-.header-and-orange__stripe {
-  transform: translateY(-1rem);
-}
-.header-and-orange__orange {
-  transform: translateX(-3.5rem);
-}
-
-.header-and-orange-vertical {
-  text-align: center;
-}
-.header-and-orange-vertical__stripe {
-  display: block;
-}
-.header-and-orange-vertical > button {
-  margin: 1.6rem auto;
-}
-
-.play-button {
-  cursor: pointer;
-  width: 4.8rem;
-  height: 4.8rem;
-  border: none;
-  position: relative;
-  border-radius: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(3px);
-}
-.play-button__icon {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-}
-
 .testimonial {
   position: absolute;
   top: 0;
@@ -347,6 +310,88 @@ body {
   margin-right: 1.6rem;
 }
 
+.person-info {
+  display: flex;
+  align-items: center;
+}
+.person-info__photo {
+  margin-right: 1.6rem;
+}
+
+.cookie-banner {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 2.4rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2.8rem;
+  padding: 1.6rem 4rem;
+  width: 46.5rem;
+  height: 5.6rem;
+  background-color: #d1fae5;
+}
+.cookie-banner__left {
+  display: flex;
+  align-items: center;
+}
+.cookie-banner__left > img {
+  margin-right: 1.2rem;
+}
+
+.header-and-orange__stripe {
+  transform: translateY(-1rem);
+}
+.header-and-orange__orange {
+  transform: translateX(-3.5rem);
+}
+
+.header-and-orange-vertical {
+  text-align: center;
+}
+.header-and-orange-vertical__stripe {
+  display: block;
+}
+.header-and-orange-vertical > button {
+  margin: 1.6rem auto;
+}
+
+.input, .select {
+  border: 1px solid #e0e3eb;
+  border-radius: 2.8rem;
+  padding: 1.6rem 2.4rem;
+  width: 100%;
+  height: 5.6rem;
+  background-color: #ffffff;
+}
+.input:focus, .select:focus {
+  outline: none;
+}
+.input select, .select select {
+  display: none;
+}
+
+.search-complex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e0e3eb;
+  border-radius: 2.8rem;
+  background-color: #ffffff;
+  padding: 0.4rem 0.4rem 0.4rem 2.4rem;
+  height: 5.6rem;
+}
+.search-complex__input {
+  margin-left: 2rem;
+  border: none;
+  transition: all 0.2s;
+  width: 50%;
+  margin-right: auto;
+}
+.search-complex__input:focus {
+  outline: none;
+}
+
 .textarea {
   resize: none;
   height: 14.4rem;
@@ -376,52 +421,6 @@ body {
 }
 .checkbox:checked {
   background-color: #10b981;
-}
-
-.select select {
-  display: none;
-}
-
-.button-small {
-  border: 1px solid #ffffff;
-  border-radius: 10rem;
-  padding: 0.8rem 1.6rem;
-  width: 10.2rem;
-  height: 3.4rem;
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  margin-right: 2.4rem;
-}
-
-.button-big {
-  border: 1px solid #0b9567;
-  border-radius: 10rem;
-  padding: 1.2rem 2.4rem;
-  width: 11.8rem;
-  height: 4.8rem;
-  background-color: #d1fae5;
-  color: #0b9567;
-}
-
-.cookie-banner {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  bottom: 2.4rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 2.8rem;
-  padding: 1.6rem 4rem;
-  width: 46.5rem;
-  height: 5.6rem;
-  background-color: #d1fae5;
-}
-.cookie-banner__left {
-  display: flex;
-  align-items: center;
-}
-.cookie-banner__left > img {
-  margin-right: 1.2rem;
 }
 
 .margin-top-16 {

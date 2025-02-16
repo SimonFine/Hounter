@@ -1,0 +1,22 @@
+.cookie-banner {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 2.4rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2.8rem;
+    padding: 1.6rem 4rem;
+    width: 46.5rem;
+    height: 5.6rem;
+    background-color: $color-primary-light;
+
+    &__left {
+        display: flex;
+        align-items: center;
+
+        & > img {
+            margin-right: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.card {
+    display: flex;
+    width: fit-content;
+    background-color: $color-white;
+    margin-right: 1.6rem;
+
+    align-items: center;
+    border-radius: 3.2rem;
+    padding: 2.4rem;
+    height: 10.4rem;
+    box-shadow: 0 11rem 48rem 0 rgba(51, 51, 51, 0.06);
+
+    &__images {
+        display: flex;
+        margin-right: 1.6rem;
+    }
+    
+    &__photo {
+        height: 5.6rem;
+        width: 5.6rem;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 3px solid #fff;
+
+        &:not(:last-child) {
+            margin-right: -2rem;
+        }
+    }
+}
+
+.house-card {
+    width: 37.6rem;
+
+    &:not(:last-child) {
+        margin-right: 3.2rem;
+    }
+
+    &__picture {
+        position: relative;
+        margin-bottom: 2.4rem;
+    }
+
+    &__chip {
+        position: absolute;
+        display: flex;
+        bottom: 1.6rem;
+        left: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 3.2rem;
+        padding: .8rem 1.6rem;
+        height: 3.4rem;
+
+        &__icon { margin-right: .8rem; }
+        
+        &--red {
+            background-color: $color-danger-light;
+            color: $color-danger;
+        }
+
+        &--blue {
+            background-color: $color-info-light;
+            color: $color-info;
+        }
+
+        &--green {
+            background-color: $color-primary-light;
+            color: $color-primary-dark;
+        }
+    }
+
+    &__text {
+        margin-bottom: 2.4rem;
+    }
+}
+
+.testimonial {
+    position: absolute;
+    top: 0;
+    width: 78.4rem;
+    margin: 0 3.2rem;
+
+    &__card {
+        position: absolute;
+        bottom: -7.6rem;
+        left: 50%;
+        width: 80%;
+        transform: translateX(-50%);
+        padding: 3.2rem;
+        background-color: $color-white;
+        border-radius: 1.6rem;
+        box-shadow: 0 8px 3.2rem 0 rgba(12, 21, 55, 0.09);
+        width: 78%;
+    }
+
+    &__user-review {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+
+        & > img {
+            margin-right: 1.6rem;
+        }
+    }
+}
+
+.person-info {
+    display: flex;
+    align-items: center;
+
+    &__photo {
+        margin-right: 1.6rem;
+    }
+}
