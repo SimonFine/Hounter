@@ -226,9 +226,9 @@ body {
 }
 .play-btn__icon {
   position: absolute;
-  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card {
@@ -704,9 +704,9 @@ body {
 }
 .subscribe__form {
   position: absolute;
-  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   width: 41.6%;
 }
 .subscribe__form > p {

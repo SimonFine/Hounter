@@ -62,9 +62,6 @@
     backdrop-filter: blur(3px);
 
     &__icon {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
+        @include absCenter;
     }
 }
