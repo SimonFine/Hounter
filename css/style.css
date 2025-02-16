@@ -222,6 +222,7 @@ body {
   border: none;
   position: relative;
   background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10rem;
   backdrop-filter: blur(3px);
 }
 .play-btn__icon {
@@ -229,6 +230,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-left: 2px;
 }
 
 .card {
