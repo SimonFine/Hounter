@@ -173,7 +173,7 @@ body {
   margin-right: 1.6rem;
 }
 
-.btn-small {
+.nav-btn-small, .nav-btn-icon {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -191,11 +191,15 @@ body {
   height: 3.4rem;
   margin-right: 2.4rem;
 }
-.btn-small:focus {
+.nav-btn-small:focus, .nav-btn-icon:focus {
   outline: none;
 }
 
-.btn-big {
+.nav-btn-icon {
+  width: 12.6rem;
+}
+
+.nav-btn-big {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -211,7 +215,7 @@ body {
   width: 11.8rem;
   height: 4.8rem;
 }
-.btn-big:focus {
+.nav-btn-big:focus {
   outline: none;
 }
 

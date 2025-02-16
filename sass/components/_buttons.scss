@@ -38,7 +38,7 @@
     &:first-child { margin-right: 1.6rem; }
 }
 
-.btn-small {
+.nav-btn-small {
     @include btn-style(transparent, $color-white, 1px solid $color-white);
     padding: .8rem 1.6rem;
     width: 10.2rem;
@@ -46,7 +46,12 @@
     margin-right: 2.4rem;
 }
 
-.btn-big {
+.nav-btn-icon {
+    @extend .nav-btn-small;
+    width: 12.6rem;
+}
+
+.nav-btn-big {
     @include btn-style($color-primary-light, $color-primary-dark, 1px solid $color-primary-dark);
     width: 11.8rem;
     height: 4.8rem;
