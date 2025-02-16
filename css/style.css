@@ -606,6 +606,10 @@ body {
   position: relative;
 }
 
+.find-more {
+  position: relative;
+}
+
 .find-more-articles {
   display: flex;
 }
@@ -655,6 +659,22 @@ body {
 }
 .find-more-articles__description__time > img {
   margin-right: 1.2rem;
+}
+
+.find-more-blur {
+  position: absolute;
+  width: 60rem;
+  height: 60rem;
+  z-index: -100;
+  left: 0;
+}
+.find-more-blur--blue {
+  top: 10rem;
+  background: radial-gradient(circle at 5% 50%, rgba(130, 255, 232, 0.6196078431) 0%, transparent 50%);
+}
+.find-more-blur--green {
+  top: 25rem;
+  background: radial-gradient(circle at 5% 50%, rgba(201, 255, 130, 0.5882352941) 0%, transparent 50%);
 }
 
 .subscribe__banner {

@@ -1,3 +1,5 @@
+.find-more { position: relative; }
+
 .find-more-articles {
     display: flex;
 
@@ -60,5 +62,23 @@
             }
         }
     }
-    
+}
+
+.find-more-blur {
+    position: absolute;
+    width: 60rem;
+    height: 60rem;
+    z-index: -100;
+    left: 0;
+
+    &--blue {
+        top: 10rem;
+
+        background: radial-gradient(circle at 5% 50%, #82ffe89e 0%, transparent 50%);
+    }
+
+    &--green {
+        top: 25rem;
+        background: radial-gradient(circle at 5% 50%, #c9ff8296 0%, transparent 50%);
+    }
 }
