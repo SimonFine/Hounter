@@ -28,15 +28,19 @@
 }
 
 .house-card {
-    width: 37.6rem;
-
-    &:not(:last-child) {
-        margin-right: 3.2rem;
-    }
-
-    &__picture {
+    
+    margin-right: 3.2rem;
+    
+    &__photo-section {
         position: relative;
         margin-bottom: 2.4rem;
+    }
+    
+    &__picture {
+        height: 38.2rem;
+        width: 37.6rem;
+        object-fit: cover;
+        border-radius: 2rem;
     }
 
     &__chip {

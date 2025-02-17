@@ -30,20 +30,20 @@
                         </label>
                         <ul class="select-dropdown label-semibold label-semibold--white" role="listbox" id="select-dropdown">
                             <li role="option">
-                                <input type="radio" id="github" name="social-account" />
-                                <label for="github">HTML</label>
+                                <input type="radio" id="html" name="dropdown" />
+                                <label for="html">HTML</label>
                             </li>
                             <li role="option">
-                                <input type="radio" id="instagram" name="social-account" />
-                                <label for="instagram">CSS</label>
+                                <input type="radio" id="css" name="dropdown" />
+                                <label for="css">CSS</label>
                             </li>
                             <li role="option">
-                                <input type="radio" id="facebook" name="social-account" />
-                                <label for="facebook">Javascript</label>
+                                <input type="radio" id="javascript" name="dropdown" />
+                                <label for="javascript">Javascript</label>
                             </li>
                             <li role="option">
-                                <input type="radio" id="linkedIn" name="social-account" />
-                                <label for="linkedIn">React</label>
+                                <input type="radio" id="react" name="dropdown" />
+                                <label for="linkedin">React</label>
                             </li>
                         </ul>
                     </div>
@@ -144,7 +144,7 @@
     </header>
 
 
-    <section class="featured-house left-right-padding-124 top-padding-120">
+    <section class="featured-house top-padding-120">
         <div class="featured-house__header">
             <div class="header-and-orange">
                 <div class="header-and-orange__orange">
@@ -153,18 +153,27 @@
                 </div>
                 <h2 class="heading-2">Featured house</h2>
             </div>
-            <ul class="featured-house__buttons">
-                <li class="btn btn--dark-green">
-                    <img src="img/featured-house/icon-green-house.svg" alt="green-house-icon">
-                    <span class="label-semibold">House</span>
+            <ul class="featured-house__buttons" role="listbox">
+                <li role="option">
+                    <input type="radio" id="house" name="filter" class="featured-house__radio-house"/>
+                    <label for="house" class="btn btn--dark-green">
+                        <img src="img/featured-house/icon-green-house.svg" alt="green-house-icon">
+                        <span class="label-semibold">House</span>
+                    </label>
                 </li>
-                <li class="btn btn--short btn--dark-green">
-                    <img src="img/featured-house/icon-green-villa.svg" alt="green-villa-icon">
-                    <span class="label-semibold">Villa</span>
+                <li role="option">
+                    <input type="radio" id="villa" name="filter" class="featured-house__radio-villa"/>
+                    <label for="villa" class="btn btn--short btn--dark-green">
+                        <img src="img/featured-house/icon-green-villa.svg" alt="green-villa-icon">
+                        <span class="label-semibold">Villa</span>
+                    </label>
                 </li>
-                <li class="btn btn--dark-green">
-                    <img src="img/featured-house/icon-green-apartment.svg" alt="green-apartment-icon">
-                    <span class="label-semibold">Apartment</span>
+                <li role="option">
+                    <input type="radio" id="apartment" name="filter" class="featured-house__radio-apartment"/>
+                    <label for="apartment" class="btn btn--dark-green">
+                        <img src="img/featured-house/icon-green-apartment.svg" alt="green-aparment-icon">
+                        <span class="label-semibold">Apartment</span>
+                    </label>
                 </li>
             </ul>
             <nav class="featured-house__nav">
@@ -178,8 +187,8 @@
         </div>
         <div class="featured-house__cards">
             <div class="house-card">
-                <div class="house-card__picture">
-                    <img src="img/featured-house/house1.png" alt="house1-picture">
+                <div class="house-card__photo-section">
+                    <img src="img/featured-house/house3.png" alt="house1-picture" class="house-card__picture">
                     <div class="house-card__chip house-card__chip--red">
                         <img src="img/featured-house/icon-red-fire.svg" alt="red-fire-icon" class="house-card__chip__icon">
                         <span class="label-medium">Popular</span>
@@ -200,8 +209,8 @@
                 </div>
             </div>
             <div class="house-card">
-                <div class="house-card__picture">
-                    <img src="img/featured-house/house1.png" alt="house1-picture">
+                <div class="house-card__photo-section">
+                    <img src="img/featured-house/house1.png" alt="house1-picture" class="house-card__picture">
                     <div class="house-card__chip house-card__chip--blue">
                         <img src="img/featured-house/icon-blue-house.svg" alt="blue-house-icon" class="house-card__chip__icon">
                         <span class="label-medium">New House</span>
@@ -222,8 +231,8 @@
                 </div>
             </div>
             <div class="house-card">
-                <div class="house-card__picture">
-                    <img src="img/featured-house/house1.png" alt="house1-picture">
+                <div class="house-card__photo-section">
+                    <img src="img/featured-house/house1.png" alt="house1-picture" class="house-card__picture">
                     <div class="house-card__chip house-card__chip--green">
                         <img src="img/featured-house/icon-green-wallet.svg" alt="green-wallet-icon" class="house-card__chip__icon">
                         <span class="label-medium">Best deals</span>
@@ -244,8 +253,8 @@
                 </div>
             </div>
             <div class="house-card">
-                <div class="house-card__picture">
-                    <img src="img/featured-house/house1.png" alt="house1-picture">
+                <div class="house-card__photo-section">
+                    <img src="img/featured-house/house1.png" alt="house1-picture" class="house-card__picture">
                     <div class="house-card__chip house-card__chip--red">
                         <img src="img/featured-house/icon-red-fire.svg" alt="">
                         <span class="label-medium">Popular</span>
@@ -266,8 +275,8 @@
                 </div>
             </div>
             <div class="house-card">
-                <div class="house-card__picture">
-                    <img src="img/featured-house/house1.png" alt="house1-picture">
+                <div class="house-card__photo-section">
+                    <img src="img/featured-house/house1.png" alt="house1-picture" class="house-card__picture">
                     <div class="house-card__chip house-card__chip--red">
                         <img src="img/featured-house/icon-red-fire.svg" alt="red-fire-icon" class="house-card__chip__icon">
                         <span class="label-medium">Popular</span>
@@ -288,8 +297,8 @@
                 </div>
             </div>
             <div class="house-card">
-                <div class="house-card__picture">
-                    <img src="img/featured-house/house1.png" alt="house1-picture">
+                <div class="house-card__photo-section">
+                    <img src="img/featured-house/house1.png" alt="house1-picture" class="house-card__picture">
                     <div class="house-card__chip house-card__chip--blue">
                         <img src="img/featured-house/icon-blue-house.svg" alt="blue-house-icon" class="house-card__chip__icon">
                         <span class="label-medium">New House</span>
