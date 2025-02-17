@@ -7,15 +7,7 @@
         display: none;
     }
 
-    &__button {
-        @include btn-style(transparent, $color-white, 1px solid $color-white);
-        padding: .8rem 1.6rem;
-        width: 12.6rem;
-        height: 3.4rem;
-        margin-right: 2.4rem;
-    }
-
-    &__checkbox:checked ~ .select-button .arrow {
+    &__checkbox:checked ~ .dropdown-btn .arrow {
         transform: rotate(180deg);
     }
 

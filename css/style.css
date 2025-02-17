@@ -141,9 +141,14 @@ body {
   background-color: #10b981;
   color: #ffffff;
   outline: none;
+  transition: all 0.3s;
 }
 .btn:focus {
   outline: none;
+}
+.btn:hover {
+  background-color: #f59e0b;
+  color: #ffffff;
 }
 .btn > span {
   margin: auto;
@@ -158,6 +163,11 @@ body {
   background-color: #ffffff;
   color: #0b9567;
   border: 1px solid #0b9567;
+  transition: all 0.3s;
+}
+.btn--dark-green:hover {
+  background-color: #e0e3eb;
+  color: #0b9567;
 }
 
 .circle-nav-btn {
@@ -176,7 +186,7 @@ body {
   margin-right: 1.6rem;
 }
 
-.nav-btn-small, .nav-btn-icon {
+.nav-btn-small {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -193,13 +203,14 @@ body {
   width: 10.2rem;
   height: 3.4rem;
   margin-right: 2.4rem;
+  transition: all 0.3s;
 }
-.nav-btn-small:focus, .nav-btn-icon:focus {
+.nav-btn-small:focus {
   outline: none;
 }
-
-.nav-btn-icon {
-  width: 12.6rem;
+.nav-btn-small:hover {
+  background-color: #e0e3eb;
+  color: #ffffff;
 }
 
 .nav-btn-big {
@@ -217,9 +228,14 @@ body {
   outline: none;
   width: 11.8rem;
   height: 4.8rem;
+  transition: all 0.3s;
 }
 .nav-btn-big:focus {
   outline: none;
+}
+.nav-btn-big:hover {
+  background-color: #10b981;
+  color: #ffffff;
 }
 
 .play-btn {
@@ -238,6 +254,33 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-left: 2px;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 10rem;
+  padding: 1.2rem 2.4rem;
+  height: 4.8rem;
+  width: 15.6rem;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  padding: 0.8rem 1.6rem;
+  width: 12.6rem;
+  height: 3.4rem;
+  margin-right: 2.4rem;
+  transition: all 0.3s;
+}
+.dropdown-btn:focus {
+  outline: none;
+}
+.dropdown-btn:hover {
+  background-color: #e0e3eb;
+  color: #ffffff;
 }
 
 .card {
@@ -372,28 +415,7 @@ body {
 .dropdown__checkbox {
   display: none;
 }
-.dropdown__button {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer;
-  border: 1px solid #ffffff;
-  border-radius: 10rem;
-  padding: 1.2rem 2.4rem;
-  height: 4.8rem;
-  width: 15.6rem;
-  background-color: transparent;
-  color: #ffffff;
-  outline: none;
-  padding: 0.8rem 1.6rem;
-  width: 12.6rem;
-  height: 3.4rem;
-  margin-right: 2.4rem;
-}
-.dropdown__button:focus {
-  outline: none;
-}
-.dropdown__checkbox:checked ~ .select-button .arrow {
+.dropdown__checkbox:checked ~ .dropdown-btn .arrow {
   transform: rotate(180deg);
 }
 .dropdown__checkbox:checked ~ .select-dropdown {
