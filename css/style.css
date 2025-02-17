@@ -171,19 +171,32 @@ body {
 }
 
 .circle-nav-btn {
-  background-color: #ffffff;
+  transition: all 0.3s;
+  cursor: pointer;
   border: 1px solid #10b981;
+  background-color: #10b981;
+  color: #ffffff;
   border-radius: 10em;
   padding: 1.2rem;
   width: 4.8rem;
   height: 4.8rem;
 }
-.circle-nav-btn--green {
-  background-color: #10b981;
+.circle-nav-btn:hover {
+  background-color: #0b9567;
   color: #ffffff;
+}
+.circle-nav-btn__disabled {
+  cursor: auto;
+  background-color: #ffffff;
+}
+.circle-nav-btn__disabled:hover {
+  background-color: #ffffff;
 }
 .circle-nav-btn:first-child {
   margin-right: 1.6rem;
+}
+.circle-nav-btn svg {
+  transform: translate(-1px, -1px);
 }
 
 .nav-btn-small {
@@ -310,6 +323,7 @@ body {
 
 .house-card {
   margin-right: 3.2rem;
+  scroll-snap-align: start;
 }
 .house-card__photo-section {
   position: relative;
@@ -684,6 +698,8 @@ body {
   overflow-x: auto;
   display: flex;
   padding-bottom: 2rem;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
 .tour {

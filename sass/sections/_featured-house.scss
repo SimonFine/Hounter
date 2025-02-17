@@ -35,5 +35,7 @@
         overflow-x: auto;
         display: flex;
         padding-bottom: 2rem;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
     }
 }
