@@ -1,6 +1,6 @@
 .featured-house {
     padding-left: 12rem;
-    
+
     &__header {
         padding-right: 12rem;        
         display: flex;
@@ -31,12 +31,9 @@
         background-color: $color-primary-light;
     }
 
-    &__radio-villa:checked {
-
-    }
-
     &__cards {
         overflow-x: auto;
         display: flex;
+        padding-bottom: 2rem;
     }
 }

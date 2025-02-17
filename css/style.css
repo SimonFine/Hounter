@@ -683,6 +683,7 @@ body {
 .featured-house__cards {
   overflow-x: auto;
   display: flex;
+  padding-bottom: 2rem;
 }
 
 .tour {

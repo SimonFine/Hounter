@@ -155,21 +155,21 @@
             </div>
             <ul class="featured-house__buttons" role="listbox">
                 <li role="option">
-                    <input type="radio" id="house" name="filter" class="featured-house__radio-house"/>
+                    <input type="checkbox" id="house" name="filter" class="featured-house__checkbox featured-house__checkbox-house"/>
                     <label for="house" class="btn btn--dark-green">
                         <img src="img/featured-house/icon-green-house.svg" alt="green-house-icon">
                         <span class="label-semibold">House</span>
                     </label>
                 </li>
                 <li role="option">
-                    <input type="radio" id="villa" name="filter" class="featured-house__radio-villa"/>
+                    <input type="checkbox" id="villa" name="filter" class="featured-house__checkbox featured-house__checkbox-villa"/>
                     <label for="villa" class="btn btn--short btn--dark-green">
                         <img src="img/featured-house/icon-green-villa.svg" alt="green-villa-icon">
                         <span class="label-semibold">Villa</span>
                     </label>
                 </li>
                 <li role="option">
-                    <input type="radio" id="apartment" name="filter" class="featured-house__radio-apartment"/>
+                    <input type="checkbox" id="apartment" name="filter" class="featured-house__checkbox featured-house__checkbox-apartment"/>
                     <label for="apartment" class="btn btn--dark-green">
                         <img src="img/featured-house/icon-green-apartment.svg" alt="green-aparment-icon">
                         <span class="label-semibold">Apartment</span>
@@ -186,12 +186,12 @@
             </nav>
         </div>
         <div class="featured-house__cards">
-            <div class="house-card">
+            <div class="house-card" type="house">
                 <div class="house-card__photo-section">
-                    <img src="img/featured-house/house3.png" alt="house1-picture" class="house-card__picture">
-                    <div class="house-card__chip house-card__chip--red">
-                        <img src="img/featured-house/icon-red-fire.svg" alt="red-fire-icon" class="house-card__chip__icon">
-                        <span class="label-medium">Popular</span>
+                    <img src="img/featured-house/house3.png" alt="house3-picture" class="house-card__picture">
+                    <div class="house-card__chip house-card__chip--blue">
+                        <img src="img/featured-house/icon-blue-house.svg" alt="blue-house-icon" class="house-card__chip__icon">
+                        <span class="label-medium">New House</span>
                     </div>
                 </div>
                 <div class="house-card__text">
@@ -208,12 +208,12 @@
                     </div>
                 </div>
             </div>
-            <div class="house-card">
+            <div class="house-card" type="apartment">
                 <div class="house-card__photo-section">
-                    <img src="img/featured-house/house1.png" alt="house1-picture" class="house-card__picture">
-                    <div class="house-card__chip house-card__chip--blue">
-                        <img src="img/featured-house/icon-blue-house.svg" alt="blue-house-icon" class="house-card__chip__icon">
-                        <span class="label-medium">New House</span>
+                    <img src="img/featured-house/house2.png" alt="house2-picture" class="house-card__picture">
+                    <div class="house-card__chip house-card__chip--green">
+                        <img src="img/featured-house/icon-green-wallet.svg" alt="green-wallet-icon" class="house-card__chip__icon">
+                        <span class="label-medium">Best deals</span>
                     </div>
                 </div>
                 <div class="house-card__text">
@@ -222,20 +222,20 @@
                 </div>
                 <div class="person-info">
                     <div class="person-info__photo">
-                        <img src="img/featured-house/avatar2.png" alt="person2-img">
+                        <img src="img/featured-house/avatar4.png" alt="person4-img">
                     </div>
                     <div class="person-info__text">
-                        <div class="subtitle">Robert Fox</div>
-                        <div class="label label--grey2">Dr. San Jose, South Dakota</div>
+                        <div class="subtitle">Jenny Wilson</div>
+                        <div class="label label--grey2">Preston Rd. Inglewood, Maine 98380</div>
                     </div>
                 </div>
             </div>
-            <div class="house-card">
+            <div class="house-card" type="house">
                 <div class="house-card__photo-section">
-                    <img src="img/featured-house/house1.png" alt="house1-picture" class="house-card__picture">
-                    <div class="house-card__chip house-card__chip--green">
-                        <img src="img/featured-house/icon-green-wallet.svg" alt="green-wallet-icon" class="house-card__chip__icon">
-                        <span class="label-medium">Best deals</span>
+                    <img src="img/featured-house/house3.png" alt="house3-picture" class="house-card__picture">
+                    <div class="house-card__chip house-card__chip--blue">
+                        <img src="img/featured-house/icon-blue-house.svg" alt="blue-house-icon" class="house-card__chip__icon">
+                        <span class="label-medium">New House</span>
                     </div>
                 </div>
                 <div class="house-card__text">
@@ -252,11 +252,11 @@
                     </div>
                 </div>
             </div>
-            <div class="house-card">
+            <div class="house-card" type="villa">
                 <div class="house-card__photo-section">
                     <img src="img/featured-house/house1.png" alt="house1-picture" class="house-card__picture">
                     <div class="house-card__chip house-card__chip--red">
-                        <img src="img/featured-house/icon-red-fire.svg" alt="">
+                        <img src="img/featured-house/icon-red-fire.svg" alt="red-fire-icon" class="house-card__chip__icon">
                         <span class="label-medium">Popular</span>
                     </div>
                 </div>
@@ -274,7 +274,117 @@
                     </div>
                 </div>
             </div>
-            <div class="house-card">
+            <div class="house-card" type="villa">
+                <div class="house-card__photo-section">
+                    <img src="img/featured-house/house1.png" alt="house1-picture" class="house-card__picture">
+                    <div class="house-card__chip house-card__chip--red">
+                        <img src="img/featured-house/icon-red-fire.svg" alt="red-fire-icon" class="house-card__chip__icon">
+                        <span class="label-medium">Popular</span>
+                    </div>
+                </div>
+                <div class="house-card__text">
+                    <h3 class="heading-3">Woodlandside</h3>
+                    <h4 class="heading-4 heading-4--grey3">$ 20.000.000</h4>
+                </div>
+                <div class="person-info">
+                    <div class="person-info__photo">
+                        <img src="img/featured-house/avatar2.png" alt="person2-img">
+                    </div>
+                    <div class="person-info__text">
+                        <div class="subtitle">Robert Fox</div>
+                        <div class="label label--grey2">Dr. San Jose, South Dakota</div>
+                    </div>
+                </div>
+            </div>
+            <div class="house-card" type="house">
+                <div class="house-card__photo-section">
+                    <img src="img/featured-house/house3.png" alt="house3-picture" class="house-card__picture">
+                    <div class="house-card__chip house-card__chip--blue">
+                        <img src="img/featured-house/icon-blue-house.svg" alt="blue-house-icon" class="house-card__chip__icon">
+                        <span class="label-medium">New House</span>
+                    </div>
+                </div>
+                <div class="house-card__text">
+                    <h3 class="heading-3">Woodlandside</h3>
+                    <h4 class="heading-4 heading-4--grey3">$ 20.000.000</h4>
+                </div>
+                <div class="person-info">
+                    <div class="person-info__photo">
+                        <img src="img/featured-house/avatar2.png" alt="person2-img">
+                    </div>
+                    <div class="person-info__text">
+                        <div class="subtitle">Robert Fox</div>
+                        <div class="label label--grey2">Dr. San Jose, South Dakota</div>
+                    </div>
+                </div>
+            </div>
+            <div class="house-card" type="villa">
+                <div class="house-card__photo-section">
+                    <img src="img/featured-house/house1.png" alt="house1-picture" class="house-card__picture">
+                    <div class="house-card__chip house-card__chip--red">
+                        <img src="img/featured-house/icon-red-fire.svg" alt="red-fire-icon" class="house-card__chip__icon">
+                        <span class="label-medium">Popular</span>
+                    </div>
+                </div>
+                <div class="house-card__text">
+                    <h3 class="heading-3">Woodlandside</h3>
+                    <h4 class="heading-4 heading-4--grey3">$ 20.000.000</h4>
+                </div>
+                <div class="person-info">
+                    <div class="person-info__photo">
+                        <img src="img/featured-house/avatar2.png" alt="person2-img">
+                    </div>
+                    <div class="person-info__text">
+                        <div class="subtitle">Robert Fox</div>
+                        <div class="label label--grey2">Dr. San Jose, South Dakota</div>
+                    </div>
+                </div>
+            </div>
+            <div class="house-card" type="apartment">
+                <div class="house-card__photo-section">
+                    <img src="img/featured-house/house2.png" alt="house2-picture" class="house-card__picture">
+                    <div class="house-card__chip house-card__chip--green">
+                        <img src="img/featured-house/icon-green-wallet.svg" alt="green-wallet-icon" class="house-card__chip__icon">
+                        <span class="label-medium">Best deals</span>
+                    </div>
+                </div>
+                <div class="house-card__text">
+                    <h3 class="heading-3">Woodlandside</h3>
+                    <h4 class="heading-4 heading-4--grey3">$ 20.000.000</h4>
+                </div>
+                <div class="person-info">
+                    <div class="person-info__photo">
+                        <img src="img/featured-house/avatar2.png" alt="person2-img">
+                    </div>
+                    <div class="person-info__text">
+                        <div class="subtitle">Robert Fox</div>
+                        <div class="label label--grey2">Dr. San Jose, South Dakota</div>
+                    </div>
+                </div>
+            </div>
+            <div class="house-card" type="apartment">
+                <div class="house-card__photo-section">
+                    <img src="img/featured-house/house2.png" alt="house2-picture" class="house-card__picture">
+                    <div class="house-card__chip house-card__chip--green">
+                        <img src="img/featured-house/icon-green-wallet.svg" alt="green-wallet-icon" class="house-card__chip__icon">
+                        <span class="label-medium">Best deals</span>
+                    </div>
+                </div>
+                <div class="house-card__text">
+                    <h3 class="heading-3">Woodlandside</h3>
+                    <h4 class="heading-4 heading-4--grey3">$ 20.000.000</h4>
+                </div>
+                <div class="person-info">
+                    <div class="person-info__photo">
+                        <img src="img/featured-house/avatar1.png" alt="person1-img">
+                    </div>
+                    <div class="person-info__text">
+                        <div class="subtitle">Dianne Russell</div>
+                        <div class="label label--grey2">Manchester, Kentucky</div>
+                    </div>
+                </div>
+            </div>
+            <div class="house-card" type="villa">
                 <div class="house-card__photo-section">
                     <img src="img/featured-house/house1.png" alt="house1-picture" class="house-card__picture">
                     <div class="house-card__chip house-card__chip--red">
@@ -293,28 +403,6 @@
                     <div class="person-info__text">
                         <div class="subtitle">Dianne Russell</div>
                         <div class="label label--grey2">Manchester, Kentucky</div>
-                    </div>
-                </div>
-            </div>
-            <div class="house-card">
-                <div class="house-card__photo-section">
-                    <img src="img/featured-house/house1.png" alt="house1-picture" class="house-card__picture">
-                    <div class="house-card__chip house-card__chip--blue">
-                        <img src="img/featured-house/icon-blue-house.svg" alt="blue-house-icon" class="house-card__chip__icon">
-                        <span class="label-medium">New House</span>
-                    </div>
-                </div>
-                <div class="house-card__text">
-                    <h3 class="heading-3">Woodlandside</h3>
-                    <h4 class="heading-4 heading-4--grey3">$ 20.000.000</h4>
-                </div>
-                <div class="person-info">
-                    <div class="person-info__photo">
-                        <img src="img/featured-house/avatar2.png" alt="person2-img">
-                    </div>
-                    <div class="person-info__text">
-                        <div class="subtitle">Robert Fox</div>
-                        <div class="label label--grey2">Dr. San Jose, South Dakota</div>
                     </div>
                 </div>
             </div>
