@@ -106,4 +106,6 @@
     @extend %regular-font;
     font-weight: 600;
     font-size: 1.4rem;
+
+    &--white { color: $color-white; }
 }

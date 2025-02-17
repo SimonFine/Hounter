@@ -22,11 +22,31 @@
                 <li><a href="#" class="nav-btn-small label-semibold">About Us</a></li>
                 <li><a href="#" class="nav-btn-small label-semibold">Article</a></li>
                 <li>
-                    <a href="#" class="nav-btn-icon label-semibold">
-                        <span>Property</span>
-                        <img src="img/page/chevron-down.svg" alt="chevron-down">
-                    </a>
-                    
+                    <div class="dropdown">
+                        <input type="checkbox" id="navi-toggle" class="dropdown__checkbox">
+                        <label for="navi-toggle" class="dropdown__button">
+                          <span class="label-semibold selected-value">Property</span>
+                            <img src="img/page/chevron-down.svg" alt="chevron-down" class="arrow">
+                        </label>
+                        <ul class="select-dropdown label-semibold label-semibold--white" role="listbox" id="select-dropdown">
+                            <li role="option">
+                                <input type="radio" id="github" name="social-account" />
+                                <label for="github">HTML</label>
+                            </li>
+                            <li role="option">
+                                <input type="radio" id="instagram" name="social-account" />
+                                <label for="instagram">CSS</label>
+                            </li>
+                            <li role="option">
+                                <input type="radio" id="facebook" name="social-account" />
+                                <label for="facebook">Javascript</label>
+                            </li>
+                            <li role="option">
+                                <input type="radio" id="linkedIn" name="social-account" />
+                                <label for="linkedIn">React</label>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li><a href="#" class="nav-btn-big label-semibold">Sign Up</a></li>
             </ul>
@@ -586,5 +606,7 @@
         </div>
         <a href="#"><img src="img/page/icon-x-blue.svg" alt="x-icon"></a>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
