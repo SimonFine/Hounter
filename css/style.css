@@ -835,6 +835,10 @@ body {
 
 .find-more-articles {
   display: flex;
+  transition: all 1s;
+  align-items: stretch;
+  max-height: 50.8rem;
+  overflow-y: hidden;
 }
 .find-more-articles__small {
   flex: 1;
@@ -853,6 +857,7 @@ body {
   margin-bottom: 3.2rem;
 }
 .find-more-articles__big {
+  transition: all 1s;
   flex: 1;
   width: 50%;
   padding-left: 1.6rem;
@@ -898,6 +903,22 @@ body {
 .find-more-blur--green {
   top: 25rem;
   background: radial-gradient(circle at 5% 50%, rgba(201, 255, 130, 0.5882352941) 0%, transparent 50%);
+}
+
+.btn-toggle-articles {
+  margin: 1.6rem auto 4.7rem;
+}
+
+.toggle-articles {
+  display: none;
+}
+
+.toggle-articles:checked ~ .find-more-articles {
+  max-height: 110rem;
+}
+
+.toggle-articles:checked ~ .find-more-articles .find-more-articles__big {
+  transform: translateY(20%);
 }
 
 .subscribe__banner {
