@@ -114,6 +114,9 @@ body {
 .label-small--grey2 {
   color: #888b97;
 }
+.label-small--red {
+  color: #ef4444;
+}
 
 .label-medium {
   font-weight: 500;
@@ -524,6 +527,8 @@ body {
 }
 
 .search-complex {
+  transition: all 0.2s;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -542,6 +547,19 @@ body {
 }
 .search-complex__input:focus {
   outline: none;
+}
+.search-complex__error {
+  transition: opacity 0.2s;
+  opacity: 0;
+  position: absolute;
+  top: 7rem;
+  left: 4rem;
+}
+.search-complex:has(.search-complex__input:focus:invalid) {
+  border-color: #ef4444;
+}
+.search-complex:has(.search-complex__input:focus:invalid) .search-complex__error {
+  opacity: 1;
 }
 
 .textarea {
