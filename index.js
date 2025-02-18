@@ -22,7 +22,6 @@ const prevButton = document.querySelector('.circle-nav-btn.prev');
 let lastScroll = 0;
 
 const checkScroll = function() {
-    console.log(scrollContainer.scrollLeft, scrollContainer.offsetWidth, scrollContainer.scrollWidth);
     if (scrollContainer.scrollLeft === 0) {
         prevButton.classList.add('circle-nav-btn__disabled');
         document.querySelector(".circle-nav-prev-icon").setAttribute('fill', PRIMARY_COLOR);
@@ -47,3 +46,73 @@ checkScroll();
 
 scrollContainer.addEventListener('scroll', checkScroll);    //i should add a debouncer here later on
     
+//testimonial-slider logic
+const slider = function () {
+    const slides = document.querySelectorAll('.testimonial');
+    //const btnLeft = document.querySelector('.slider__btn--left');
+    //const btnRight = document.querySelector('.slider__btn--right');
+    const dotContainer = document.querySelector('.slider-dots');
+  
+    let curSlide = 1;
+    const maxSlide = slides.length;
+  
+    const createDots = function () {
+        slides.forEach(function (_, i) {
+            dotContainer.insertAdjacentHTML(
+                'beforeend',
+                `<button class="slider-dots__dot" data-slide="${i}"></button>`
+                );
+            });
+    };
+  
+    const activateDot = function (slide) {
+        document
+            .querySelectorAll('.slider-dots__dot')
+            .forEach(dot => dot.classList.remove('slider-dots__dot--active'));
+  
+        document
+            .querySelector(`.slider-dots__dot[data-slide="${slide}"]`)
+            .classList.add('slider-dots__dot--active');
+    };
+  
+    const goToSlide = function (slide) {
+        slides.forEach((s, i) => (s.style.transform = `translateX(${105 * (i - slide)}%)`));
+    };
+  
+    const nextSlide = function () {
+        curSlide = (curSlide + 1) % maxSlide;
+
+        goToSlide(curSlide);
+        activateDot(curSlide);
+    };
+  
+    const prevSlide = function () {
+        curSlide = (curSlide - 1 + maxSlide) % maxSlide;
+
+        goToSlide(curSlide);
+        activateDot(curSlide);
+    };
+  
+    const init = function () {
+        goToSlide(1);
+        createDots();
+  
+        activateDot(1);
+    };
+    init();
+  
+    document.addEventListener('keydown', function (e) {
+        e.key === 'ArrowLeft' && prevSlide();
+        e.key === 'ArrowRight' && nextSlide();
+    });
+  
+    dotContainer.addEventListener('click', function (e) {
+        if (e.target.classList.contains('slider-dots__dot')) {
+  
+            curSlide = Number(e.target.dataset.slide);
+            goToSlide(curSlide);
+            activateDot(curSlide);
+        }
+    });
+  };
+  slider();

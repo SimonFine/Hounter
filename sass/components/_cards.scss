@@ -81,8 +81,15 @@
 .testimonial {
     position: absolute;
     top: 0;
-    width: 78.4rem;
-    margin: 0 3.2rem;
+    width: 100%;
+    transition: transform .5s;
+
+    &__house-pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1.6rem;
+    }
     
     &__card {
         position: absolute;
