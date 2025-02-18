@@ -835,15 +835,16 @@ body {
 
 .find-more-articles {
   display: flex;
+  gap: 3.2rem;
   transition: all 1s;
   align-items: stretch;
   max-height: 50.8rem;
   overflow-y: hidden;
 }
 .find-more-articles__small {
+  cursor: pointer;
   flex: 1;
   width: 50%;
-  padding-right: 1.6rem;
 }
 .find-more-articles__small__article {
   height: 14.8rem;
@@ -851,7 +852,11 @@ body {
   align-items: center;
 }
 .find-more-articles__small__article > img {
+  width: 20rem;
+  height: 14.8rem;
   margin-right: 3.2rem;
+  object-fit: cover;
+  border-radius: 1.6rem;
 }
 .find-more-articles__small__article:not(:last-child) {
   margin-bottom: 3.2rem;
@@ -860,10 +865,13 @@ body {
   transition: all 1s;
   flex: 1;
   width: 50%;
-  padding-left: 1.6rem;
 }
 .find-more-articles__big > img {
   margin-bottom: 2.4rem;
+  width: 58rem;
+  height: 28rem;
+  object-fit: cover;
+  border-radius: 1.6rem;
 }
 .find-more-articles__description {
   display: flex;

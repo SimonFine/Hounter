@@ -1,3 +1,4 @@
+////////////////////////////////////////
 //featured-house section filtering logic
 document.querySelectorAll('.featured-house__checkbox').forEach(checkbox => {
     checkbox.addEventListener('change', function () {
@@ -11,6 +12,7 @@ document.querySelectorAll('.featured-house__checkbox').forEach(checkbox => {
     });
 });
 
+///////////////////////////////
 //featured-house carousel logic
 const PRIMARY_COLOR = '#10b981';
 
@@ -46,6 +48,7 @@ checkScroll();
 
 scrollContainer.addEventListener('scroll', checkScroll);    //i should add a debouncer here later on
     
+//////////////////////////
 //testimonial-slider logic
 const slider = function () {
     const slides = document.querySelectorAll('.testimonial');
@@ -114,5 +117,33 @@ const slider = function () {
             activateDot(curSlide);
         }
     });
-  };
-  slider();
+};
+slider();
+
+
+//////////////////////////////////////
+//find-more articles replacement logic
+const smallArticles = document.querySelectorAll('.find-more-articles__small__article');
+const bigArticle = document.querySelector('.find-more-articles__big');
+
+const updateBigArticle = (smallArticle) => {
+    const smallImg = smallArticle.querySelector('img');
+    const smallName = smallArticle.querySelector('.find-more-articles__description__person p');
+    const smallAvatar = smallArticle.querySelector('.find-more-articles__description__person img');
+    const smallSubtitle = smallArticle.querySelector('.subtitle');
+    const smallTime = smallArticle.querySelector('.find-more-articles__description__time p');
+
+    bigArticle.querySelector('img').src = smallImg.src;
+    bigArticle.querySelector('img').alt = smallImg.alt;
+    bigArticle.querySelector('.find-more-articles__description__person p').textContent = smallName.textContent;
+    bigArticle.querySelector('.find-more-articles__description__person img').src = smallAvatar.src;
+    bigArticle.querySelector('.find-more-articles__description__person img').alt = smallAvatar.alt;
+    bigArticle.querySelector('.subtitle').textContent = smallSubtitle.textContent;
+    bigArticle.querySelector('.find-more-articles__description__time p').textContent = smallTime.textContent;
+};
+
+smallArticles.forEach(article => {
+    article.addEventListener('click', () => {
+        updateBigArticle(article);
+    });
+});
