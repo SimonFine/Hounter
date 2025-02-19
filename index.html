@@ -481,7 +481,7 @@
 
 
     <section class="tour left-right-padding-124 top-padding-120">
-        <div class="tour__left">
+        <div class="tour-left">
             <div class="header-and-orange">
                 <div class="header-and-orange__orange">
                     <img src="img/page/orange.svg" alt="orange-stripe" class="header-and-orange__stripe">
@@ -491,25 +491,25 @@
             </div>
             <p class="light-text--grey2 margin-top-16">Houses recommended by our partners that have been curated to become the home of your dreams!</p>
             <p class="semibold-text margin-top-24">House detail</p>
-            <div class="tour__left__details margin-top-24">
-                <div class="tour__left__detail">
+            <div class="tour-left__details margin-top-24">
+                <div class="tour-left__detail">
                     <img src="img/tour/icon-bed-grey.svg" alt="icon-bed">
                     <p class="medium-text medium-text--grey3">4 Bedrooms</p>
                 </div>
-                <div class="tour__left__detail">
+                <div class="tour-left__detail">
                     <img src="img/tour/icon-bath-grey.svg" alt="icon-bath">
                     <p class="medium-text medium-text--grey3">2 Bathrooms</p>
                 </div>
-                <div class="tour__left__detail">
+                <div class="tour-left__detail">
                     <img src="img/tour/icon-car-grey.svg" alt="icon-car">
                     <p class="medium-text medium-text--grey3">1 Carport</p>
                 </div>
-                <div class="tour__left__detail">
+                <div class="tour-left__detail">
                     <img src="img/tour/icon-stairs-grey.svg" alt="icon-stairs">
                     <p class="medium-text medium-text--grey3">2 Floors</p>
                 </div>
             </div>
-            <div class="tour__left__contact margin-top-32">
+            <div class="tour-left__contact margin-top-32">
                 <div class="person-info">
                     <div class="person-info__photo">
                         <img src="img/tour/avatar.png" alt="person-img">
@@ -525,16 +525,24 @@
                 </button>
             </div>
         </div>
-        <div class="tour__right">
-            <div class="tour__right__house">
-                <img src="img/tour/house.png" alt="house-picture">
-                <button class="play-btn">
-                    <img src="img/tour/Vector 10.svg" alt="play-button" class="play-btn__icon">
-                </button>
-                <div class="tour__right__images">
-                    <img src="img/tour/sofa.png" alt="sofa-picture" class="tour__right__sofa">
-                    <img src="img/tour/vase.png" alt="vase-picture" class="tour__right__vase">
-                    <img src="img/tour/chair.png" alt="chair-picture" class="tour__right__chair">
+        <div class="tour-right">
+            <div class="tour-right__house">
+                <input type="radio" id="play-button" class="tour-right__checkbox" name="video">
+                <input type="radio" id="close-button" class="tour-right__checkbox-close-video" name="video">
+                <div class="tour-right__video-container">
+                    <img src="img/tour/house.png" alt="house-picture" class="tour-right__big-img">
+                    <label for="play-button" class="play-btn">
+                        <img src="img/tour/Vector 10.svg" alt="play-button" class="play-btn__icon">
+                    </label>
+                    <label for="close-button" class="close-btn">
+                        <img src="img/page/icon-x-blue.svg" alt="close-icon">
+                    </label>
+                    <iframe src="https://www.youtube.com/embed/gS-JRX1aOBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen crossorigin></iframe>
+                </div>
+                <div class="tour-right__images">
+                    <img src="img/tour/sofa.png" alt="sofa-picture" class="tour-right__sofa">
+                    <img src="img/tour/vase.png" alt="vase-picture" class="tour-right__vase">
+                    <img src="img/tour/chair.png" alt="chair-picture" class="tour-right__chair">
                 </div>
             </div>
         </div>
