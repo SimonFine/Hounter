@@ -35,6 +35,12 @@ $font-primary: 'Lexend', sans-serif;
     }
 }
 
+@include respond(phone-small) {
+    :root {
+        --default-left-right-padding: 3.1rem;
+    }
+}
+
 *,
 *::before,
 *::after {
@@ -75,6 +81,11 @@ body {
 
     &--logo {
         width: 11.5rem;
+        height: 3.6rem;
+    }
+
+    &--logo-small {
+        width: 3.6rem;
         height: 3.6rem;
     }
 

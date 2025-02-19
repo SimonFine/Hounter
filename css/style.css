@@ -7,6 +7,11 @@
     --default-left-right-padding: 6.2rem;
   }
 }
+@media only screen and (max-width: 570px) {
+  :root {
+    --default-left-right-padding: 3.1rem;
+  }
+}
 *,
 *::before,
 *::after {
@@ -53,6 +58,10 @@ body {
 }
 .icon--logo {
   width: 11.5rem;
+  height: 3.6rem;
+}
+.icon--logo-small {
+  width: 3.6rem;
   height: 3.6rem;
 }
 .icon--partner {
@@ -308,6 +317,11 @@ body {
     height: 4rem;
   }
 }
+@media only screen and (max-width: 570px) {
+  .nav-btn-small {
+    margin-right: 1.2rem;
+  }
+}
 
 .nav-btn-big {
   display: flex;
@@ -559,6 +573,11 @@ body {
 .dropdown-btn:focus {
   outline: none;
 }
+@media only screen and (max-width: 570px) {
+  .dropdown-btn {
+    margin-right: 1.2rem;
+  }
+}
 @media only screen and (max-width: 690px) {
   .dropdown-btn {
     background-color: #626687;
@@ -796,6 +815,17 @@ body {
 }
 .navbar a {
   text-decoration: none;
+}
+.navbar__logo--small {
+  display: none;
+}
+@media only screen and (max-width: 570px) {
+  .navbar__logo--small {
+    display: block;
+  }
+  .navbar__logo--default {
+    display: none;
+  }
 }
 
 .hero-section {

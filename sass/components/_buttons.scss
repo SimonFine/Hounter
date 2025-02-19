@@ -91,6 +91,10 @@
         background-color: $color-grey3;
         height: 4rem;
     }
+
+    @include respond(phone-small) {
+        margin-right: 1.2rem;
+    }
 }
 
 .nav-btn-big {

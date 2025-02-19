@@ -13,4 +13,13 @@
     }
 
     a { text-decoration: none; }
+
+    &__logo {
+        &--small { display: none; }
+
+        @include respond(phone-small) {
+            &--small { display: block; }
+            &--default { display: none; }
+        }
+    }
 }
