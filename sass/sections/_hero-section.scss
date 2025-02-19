@@ -19,7 +19,7 @@
 
         &__content {
             padding-top: 18.2rem;
-            padding-right: 10rem;
+            padding-right: calc(var(--default-left-right-padding) * 0.81);
             padding-left: var(--default-left-right-padding);
         }
 

@@ -10,6 +10,17 @@
         align-items: center;
         margin-bottom: 3.6rem;
 
+        .header-and-orange {  
+            &__stripe {
+                transform: translateY(-1rem);
+                width: 3.2rem;
+            }
+        
+            &__orange {
+                transform: translateX(-3.5rem);
+            }
+        }
+
         @include respond(phone-small) {
             flex-direction: column;
             text-align: center;
@@ -20,22 +31,14 @@
             }
 
             & .header-and-orange__orange {
+                display: flex;
+                flex-direction: column;
                 transform: translate(0);
             }
 
             & .header-and-orange__stripe {
-                transform: translate(0);
-            }
-        }
-
-        .header-and-orange {  
-            &__stripe {
+                margin: 0 auto;
                 transform: translateY(-1rem);
-                width: 3.2rem;
-            }
-        
-            &__orange {
-                transform: translateX(-3.5rem);
             }
         }
         
