@@ -47,6 +47,22 @@
         }
     }
 
+    @include respond(phone-small) {
+        flex-direction: column;
+        align-items: center;
+        max-height: 101.6rem;
+
+        &__small {
+            width: 100%;
+            order: 2;
+        }
+
+        &__big {
+            width: 100%;
+            order: 1;
+        }
+    }
+
     &__description {
         display: flex;
         flex-direction: column;
@@ -104,12 +120,20 @@
 
 .toggle-articles {
     display: none;
-}
 
-.toggle-articles:checked ~ .find-more-articles {
-    max-height: 110rem;
-}
+    &:checked ~ .find-more-articles {
+        max-height: 110rem;
 
-.toggle-articles:checked ~ .find-more-articles .find-more-articles__big {
-    transform: translateY(20%);
+        .find-more-articles__big {
+            transform: translateY(20%);
+        }
+    
+        @include respond(phone-small) {
+            max-height: 220rem;
+    
+            .find-more-articles__big {
+                transform: translate(0);
+            }
+        }
+    }
 }
