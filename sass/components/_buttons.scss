@@ -13,6 +13,7 @@
             height: 100%;
             width: 6rem;
             padding: 0;
+
             .label-semibold {
                 display: none;
             }
@@ -23,17 +24,26 @@
         }
     }
     
-    & > span {
-        margin: auto;
+    &--long {
+        width: 17.1rem;
+
+        @include respond(phone-big) {
+            width: 6rem;
+            text-align: center;
+            padding: 1rem;
+
+            .label-semibold { display: none !important; }
+        }
     }
+
+    // & > span {
+    //     //margin: auto;
+    // }
 
     &--short {
         width: 11.2rem;
     }
 
-    &--long {
-        width: 17.1rem;
-    }
 
     &--dark-green {
         background-color: $color-white;
