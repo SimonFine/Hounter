@@ -60,24 +60,13 @@
     width: 50%;
     text-align: center;
     
-    &__house {
-        position: relative;
-        display: inline-block;
-    }
-    
-    &__images {
-        position: absolute;
-        bottom: -4.3rem;
-        left: -5rem;
-        transition: all 1s;
-    }
-
     &__video-container {
+        margin: 0 auto;
         width: 47.8rem;
         height: 41.6rem;
         position: relative;
         transition: all 5s;
-
+        
         & > iframe {
             width: 100%;
             height: 100%;
@@ -88,10 +77,33 @@
             opacity: 0;
             transition: all .5s;
         }
-
+        
         & > .play-btn {
             @include absCenter;
         }
+    }
+
+    &__big-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    &__images {
+        position: absolute;
+        bottom: -4.3rem;
+        left: -5rem;
+        transition: all 1s;
+    }
+
+    &__sofa {
+        width: 29.6rem;
+        height: 16.8rem;
+    }
+
+    &__vase, &__chair {
+        width: 9.6rem;
+        height: 8rem;
     }
 
     &__checkbox, &__checkbox-close-video { display: none; }
@@ -106,12 +118,12 @@
         visibility: hidden;
     }
 
-    &__checkbox:checked ~ .tour-right__video-container iframe {
+    &__checkbox:checked ~ iframe {
         opacity: 1;
         visibility: visible;
     }
 
-    &__checkbox-close-video:checked ~ .tour-right__video-container iframe {
+    &__checkbox-close-video:checked ~ iframe {
         opacity: 0;
         visibility: hidden;
     }
@@ -126,7 +138,7 @@
         visibility: visible;
     }
 
-    &__checkbox:checked ~ .tour-right__video-container .close-btn {
+    &__checkbox:checked ~ .close-btn {
         opacity: 1;
         visibility: visible;
     }

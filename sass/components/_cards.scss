@@ -126,5 +126,16 @@
 
     &__photo {
         margin-right: 1.6rem;
+
+    }
+
+    &__avatar {
+        width: 4rem;
+        height: 4rem;
+
+        &--big {
+            width: 5.6rem;
+            height: 5.6rem;
+        }
     }
 }

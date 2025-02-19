@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 //COLOR MONOCHROME
 $color-white: #ffffff;
 $color-grey1: #e0e3eb;
@@ -32,22 +34,46 @@ $font-primary: 'Lexend', sans-serif;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+    font-size: 62.5%;
 
-    // @media only screen and (max-width: $bp-largest) {
-    //     font-size: 50%;
-    // }
+    
+    @include respond(tab-land) { // width < 1200?
+        font-size: 50%; //1 rem = 9px, 9/16 = 50%
+    }
+    @include respond(tab-port) { // width < 900?
+        font-size: 42%; //1 rem = 8px, 8/16 = 50%
+    }
+    @include respond(tab-port-small) { // width < 900?
+        font-size: 35%; //1 rem = 8px, 8/16 = 50%
+    }
+    @include respond(big-desktop) {
+        font-size: 80%; //1rem = 14, 14/16
+    }
 }
 
 body {
     font-family: $font-primary;
     font-weight: 300;
-    font-size: 1.6rem;
     line-height: 1.5;
     color: $color-black;
 }
 
-.container {
-    display: grid;
-    grid-template-rows: 72rem;
+.icon {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    &--logo {
+        width: 11.5rem;
+        height: 3.6rem;
+    }
+
+    &--partner {
+        width: 8.2rem;
+        height: 6.4rem;
+    }
+
+    &--social {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
 }

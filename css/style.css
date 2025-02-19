@@ -10,18 +10,49 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 1420px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  html {
+    font-size: 42%;
+  }
+}
+@media only screen and (max-width: 950px) {
+  html {
+    font-size: 35%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 80%;
+  }
+}
 
 body {
   font-family: "Lexend", sans-serif;
   font-weight: 300;
-  font-size: 1.6rem;
   line-height: 1.5;
   color: #1b1c57;
 }
 
-.container {
-  display: grid;
-  grid-template-rows: 72rem;
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.icon--logo {
+  width: 11.5rem;
+  height: 3.6rem;
+}
+.icon--partner {
+  width: 8.2rem;
+  height: 6.4rem;
+}
+.icon--social {
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .label-semibold, .label-medium, .label-small, .label, .semibold-text, .medium-text, .light-text, .subtitle, .heading-4, .heading-3, .heading-2, .heading-1 {
@@ -202,7 +233,7 @@ body {
   margin-right: 1.6rem;
 }
 .circle-nav-btn svg {
-  transform: translate(-1px, -1px);
+  transform: translate(-6%, -6%);
 }
 
 .nav-btn-small {
@@ -389,6 +420,14 @@ body {
 .person-info__photo {
   margin-right: 1.6rem;
 }
+.person-info__avatar {
+  width: 4rem;
+  height: 4rem;
+}
+.person-info__avatar--big {
+  width: 5.6rem;
+  height: 5.6rem;
+}
 
 .cookie-banner {
   position: fixed;
@@ -403,6 +442,7 @@ body {
   height: 5.6rem;
   background-color: #d1fae5;
   transition: all 0.3s ease;
+  z-index: 10000;
 }
 .cookie-banner__left {
   display: flex;
@@ -830,17 +870,8 @@ body {
   width: 50%;
   text-align: center;
 }
-.tour-right__house {
-  position: relative;
-  display: inline-block;
-}
-.tour-right__images {
-  position: absolute;
-  bottom: -4.3rem;
-  left: -5rem;
-  transition: all 1s;
-}
 .tour-right__video-container {
+  margin: 0 auto;
   width: 47.8rem;
   height: 41.6rem;
   position: relative;
@@ -862,6 +893,25 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.tour-right__big-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tour-right__images {
+  position: absolute;
+  bottom: -4.3rem;
+  left: -5rem;
+  transition: all 1s;
+}
+.tour-right__sofa {
+  width: 29.6rem;
+  height: 16.8rem;
+}
+.tour-right__vase, .tour-right__chair {
+  width: 9.6rem;
+  height: 8rem;
+}
 .tour-right__checkbox, .tour-right__checkbox-close-video {
   display: none;
 }
@@ -874,11 +924,11 @@ body {
   opacity: 0;
   visibility: hidden;
 }
-.tour-right__checkbox:checked ~ .tour-right__video-container iframe {
+.tour-right__checkbox:checked ~ iframe {
   opacity: 1;
   visibility: visible;
 }
-.tour-right__checkbox-close-video:checked ~ .tour-right__video-container iframe {
+.tour-right__checkbox-close-video:checked ~ iframe {
   opacity: 0;
   visibility: hidden;
 }
@@ -890,7 +940,7 @@ body {
   opacity: 1;
   visibility: visible;
 }
-.tour-right__checkbox:checked ~ .tour-right__video-container .close-btn {
+.tour-right__checkbox:checked ~ .close-btn {
   opacity: 1;
   visibility: visible;
 }
@@ -1004,6 +1054,8 @@ body {
 }
 .find-more-articles__description__person > img {
   margin-right: 1.6rem;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 .find-more-articles__description > p {
   margin-top: 1.2rem;
@@ -1068,41 +1120,57 @@ body {
   text-align: center;
 }
 .subscribe__left1-pic {
+  width: 8.1rem;
+  height: 8.1rem;
   position: absolute;
   top: 3.8rem;
   left: 4rem;
 }
 .subscribe__left2-pic {
+  width: 3.6rem;
+  height: 3.6rem;
   position: absolute;
   top: 7.1rem;
   left: 20rem;
 }
 .subscribe__left3-pic {
+  width: 3.6rem;
+  height: 3.6rem;
   position: absolute;
   top: 17.3rem;
   left: 6.3rem;
 }
 .subscribe__left4-pic {
+  width: 5.4rem;
+  height: 5.4rem;
   position: absolute;
   top: 17.8rem;
   left: 19.1rem;
 }
 .subscribe__right1-pic {
+  width: 7rem;
+  height: 7rem;
   position: absolute;
   top: 4.4rem;
   right: 19.6rem;
 }
 .subscribe__right2-pic {
+  width: 3.6rem;
+  height: 3.6rem;
   position: absolute;
   top: 10.7rem;
   right: 7.8rem;
 }
 .subscribe__right3-pic {
+  width: 3.6rem;
+  height: 3.6rem;
   position: absolute;
   top: 14.3rem;
   right: 19.6rem;
 }
 .subscribe__right4-pic {
+  width: 5.5rem;
+  height: 5.5rem;
   position: absolute;
   top: 19.7rem;
   right: 6.9rem;
@@ -1143,6 +1211,10 @@ body {
   width: 4rem;
   height: 2px;
   background-color: #10b981;
+}
+.form-left__picture {
+  width: 26.1rem;
+  height: 20.6rem;
 }
 
 .form-right {
