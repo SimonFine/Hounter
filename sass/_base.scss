@@ -40,10 +40,10 @@ html {
     @include respond(tab-land) { // width < 1200?
         font-size: 50%; //1 rem = 9px, 9/16 = 50%
     }
-    @include respond(tab-port) { // width < 900?
+    @include respond(tab-port-big) { // width < 900?
         font-size: 42%; //1 rem = 8px, 8/16 = 50%
     }
-    @include respond(tab-port-small) { // width < 900?
+    @include respond(tab-port-medium) { // width < 900?
         font-size: 35%; //1 rem = 8px, 8/16 = 50%
     }
     @include respond(big-desktop) {

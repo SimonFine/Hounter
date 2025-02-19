@@ -3,6 +3,25 @@
 .btn {
     @include btn-style($color-primary, $color-white);
     @include hover-effect($color-secondary);
+
+    &--in-input {
+        &__hidden-icon { display: none; }
+    }
+    
+    @include respond(tab-port-small) {
+        &--in-input {
+            height: 100%;
+            width: 6rem;
+            padding: 0;
+            .label-semibold {
+                display: none;
+            }
+
+            &__hidden-icon {
+                display: block;
+            }
+        }
+    }
     
     & > span {
         margin: auto;

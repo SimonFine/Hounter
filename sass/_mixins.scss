@@ -3,9 +3,12 @@
         @media only screen and (max-width: 37.5em) { @content };    //600px
     }
     @if $breakpoint == tab-port-small {
+        @media only screen and (max-width: 768px) { @content };     //1250px
+    }
+    @if $breakpoint == tab-port-medium {
         @media only screen and (max-width: 950px) { @content };     //1250px
     }
-    @if $breakpoint == tab-port {
+    @if $breakpoint == tab-port-big {
         @media only screen and (max-width: 1150px) { @content };     //1250px
     }
     @if $breakpoint == tab-land {
