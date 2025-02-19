@@ -24,6 +24,17 @@ $color-info-light: #dbeafe;
 $font-primary: 'Lexend', sans-serif;
 
 
+//OTHER 
+:root {
+    --default-left-right-padding: 12.4rem;
+}
+
+@include respond(tab-port-small) {
+    :root {
+        --default-left-right-padding: 6.2rem;
+    }
+}
+
 *,
 *::before,
 *::after {

@@ -1,6 +1,7 @@
 .header-and-orange {  
     &__stripe {
         transform: translateY(-1rem);
+        width: 3.2rem;
     }
 
     &__orange {
@@ -13,6 +14,7 @@
 
     &__stripe {
         display: block;
+        width: 3.2rem;
     }
 
     & > button {

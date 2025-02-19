@@ -1,3 +1,12 @@
+:root {
+  --default-left-right-padding: 12.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --default-left-right-padding: 6.2rem;
+  }
+}
 *,
 *::before,
 *::after {
@@ -604,6 +613,7 @@ body {
 
 .header-and-orange__stripe {
   transform: translateY(-1rem);
+  width: 3.2rem;
 }
 .header-and-orange__orange {
   transform: translateX(-3.5rem);
@@ -614,6 +624,7 @@ body {
 }
 .header-and-orange-vertical__stripe {
   display: block;
+  width: 3.2rem;
 }
 .header-and-orange-vertical > button {
   margin: 1.6rem auto;
@@ -726,7 +737,7 @@ body {
 }
 
 .left-right-padding-124 {
-  padding: 0 12.4rem;
+  padding: 0 var(--default-left-right-padding);
 }
 
 .top-padding-120 {
@@ -762,7 +773,7 @@ body {
 .hero-section__main__content {
   padding-top: 18.2rem;
   padding-right: 10rem;
-  padding-left: 12.4rem;
+  padding-left: var(--default-left-right-padding);
 }
 .hero-section__main__logos {
   display: flex;
@@ -804,7 +815,7 @@ body {
   }
 }
 .featured-house {
-  padding-left: 12rem;
+  padding-left: var(--default-left-right-padding);
 }
 .featured-house__header {
   padding-right: 12rem;

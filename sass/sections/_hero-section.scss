@@ -10,7 +10,7 @@
         &__content {
             padding-top: 18.2rem;
             padding-right: 10rem;
-            padding-left: 12.4rem;
+            padding-left: var(--default-left-right-padding);
         }
 
         &__logos {
