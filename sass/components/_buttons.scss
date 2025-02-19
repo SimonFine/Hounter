@@ -32,13 +32,14 @@
             text-align: center;
             padding: 1rem;
 
-            .label-semibold { display: none !important; }
+            .label-semibold { display: none; }
+        }
+
+        @include respond(phone-small) {
+            width: 17.1rem;
+            .label-semibold { display: block; }
         }
     }
-
-    // & > span {
-    //     //margin: auto;
-    // }
 
     &--short {
         width: 11.2rem;
