@@ -590,6 +590,11 @@ body {
   opacity: 0;
   visibility: hidden;
 }
+@media only screen and (max-width: 690px) {
+  .select-dropdown {
+    background-color: #626687;
+  }
+}
 .select-dropdown li {
   border-radius: 2.8rem;
   display: flex;

@@ -78,6 +78,10 @@
     opacity: 0;
     visibility: hidden;
 
+    @include respond(phone-big) {
+        background-color: $color-grey3;
+    }
+
     li {
         border-radius: 2.8rem;
         display: flex;
