@@ -102,6 +102,8 @@
     @extend %regular-font;
     font-weight: 500;
     font-size: 1.4rem;
+
+    &--grey2 { color: $color-grey2; }
 }
 
 .label-semibold {

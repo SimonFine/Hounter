@@ -785,14 +785,30 @@
             </div>
             <div class="form-right__row">
                 <p class="form-right__label label-medium">Education</p>
-                <div class="select">
-                    <select name="" id="">
-                        <option value="" disabled selected hidden>Select One</option>
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                        <option value="js">JavaScript</option>
-                        <option value="react">React</option>
-                    </select>
+                <div class="dropdown dropdown--wide">
+                    <input type="checkbox" id="education-toggle" class="dropdown__checkbox">
+                    <label for="education-toggle" class="dropdown-btn--wide">
+                        <span class="label-medium label-medium--grey2 selected-value">Select One</span>
+                        <img src="img/page/chevron-down-grey.svg" alt="chevron-down-grey" class="arrow">
+                    </label>
+                    <ul class="select-dropdown select-dropdown--wide label-medium" role="listbox" id="select-dropdown">
+                        <li role="option">
+                            <input type="radio" id="html" name="dropdown" />
+                            <label for="html">HTML</label>
+                        </li>
+                        <li role="option">
+                            <input type="radio" id="css" name="dropdown" />
+                            <label for="css">CSS</label>
+                        </li>
+                        <li role="option">
+                            <input type="radio" id="javascript" name="dropdown" />
+                            <label for="javascript">Javascript</label>
+                        </li>
+                        <li role="option">
+                            <input type="radio" id="react" name="dropdown" />
+                            <label for="linkedin">React</label>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="form-right__row">

@@ -122,6 +122,9 @@ body {
   font-weight: 500;
   font-size: 1.4rem;
 }
+.label-medium--grey2 {
+  color: #888b97;
+}
 
 .label-semibold {
   font-weight: 600;
@@ -272,33 +275,6 @@ body {
   margin-left: 2px;
 }
 
-.dropdown-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer;
-  border: 1px solid #ffffff;
-  border-radius: 10rem;
-  padding: 1.2rem 2.4rem;
-  height: 4.8rem;
-  width: 15.6rem;
-  background-color: transparent;
-  color: #ffffff;
-  outline: none;
-  padding: 0.8rem 1.6rem;
-  width: 12.6rem;
-  height: 3.4rem;
-  margin-right: 2.4rem;
-  transition: all 0.3s;
-}
-.dropdown-btn:focus {
-  outline: none;
-}
-.dropdown-btn:hover {
-  background-color: #e0e3eb;
-  color: #ffffff;
-}
-
 .card {
   display: flex;
   width: fit-content;
@@ -441,7 +417,7 @@ body {
 .dropdown__checkbox {
   display: none;
 }
-.dropdown__checkbox:checked ~ .dropdown-btn .arrow {
+.dropdown__checkbox:checked ~ .dropdown-btn .arrow, .dropdown__checkbox:checked ~ .dropdown-btn--wide .arrow {
   transform: rotate(180deg);
 }
 .dropdown__checkbox:checked ~ .select-dropdown {
@@ -449,9 +425,61 @@ body {
   visibility: visible;
   transform: scaleY(1);
 }
+.dropdown--wide {
+  width: 100%;
+  z-index: 2;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 10rem;
+  padding: 1.2rem 2.4rem;
+  height: 4.8rem;
+  width: 15.6rem;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 12.6rem;
+  padding: 0.8rem 1.6rem;
+  height: 3.4rem;
+  margin-right: 2.4rem;
+  transition: all 0.3s;
+}
+.dropdown-btn:focus {
+  outline: none;
+}
+.dropdown-btn:hover {
+  background-color: #e0e3eb;
+  color: #ffffff;
+}
+.dropdown-btn--wide {
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #e0e3eb;
+  border-radius: 2.8rem;
+  padding: 1.6rem 2.4rem;
+  width: 100%;
+  height: 5.6rem;
+  background-color: #ffffff;
+}
+.dropdown-btn--wide:focus {
+  outline: none;
+}
 
 .select-dropdown {
   position: absolute;
+  width: 12.6rem;
   z-index: -100;
   top: 0;
   transform: scaleY(0);
@@ -460,14 +488,12 @@ body {
   border: 1px solid #e0e3eb;
   border-radius: 1.6rem;
   padding: 4.8rem 0.8rem 1.6rem 0.8rem;
-  width: 12.6rem;
   background-color: transparent;
   transition: 0.5s ease;
   opacity: 0;
   visibility: hidden;
 }
 .select-dropdown li {
-  cursor: pointer;
   border-radius: 2.8rem;
   display: flex;
   align-items: center;
@@ -476,17 +502,30 @@ body {
 .select-dropdown li:not(:last-child) {
   margin-bottom: 1.6rem;
 }
-.select-dropdown label {
-  padding-left: 1rem;
+.select-dropdown li label {
   cursor: pointer;
-  display: flex;
-  align-items: center;
 }
 .select-dropdown li:hover {
   background-color: #10b981;
 }
 .select-dropdown input[type=radio] {
   display: none;
+}
+.select-dropdown--wide {
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #e0e3eb;
+  border-radius: 2.8rem;
+  z-index: -10;
+  padding: 6.4rem 2.4rem 1.6rem 2.4rem;
+  background-color: #ffffff;
+}
+.select-dropdown--wide li {
+  height: 4rem;
+  padding: 0.8rem 1.6rem;
+}
+.select-dropdown--wide li:hover {
+  background-color: #d1fae5;
 }
 
 .arrow {
@@ -511,7 +550,7 @@ body {
   margin: 1.6rem auto;
 }
 
-.input, .select {
+.input, .dropdown-input {
   border: 1px solid #e0e3eb;
   border-radius: 2.8rem;
   padding: 1.6rem 2.4rem;
@@ -519,11 +558,8 @@ body {
   height: 5.6rem;
   background-color: #ffffff;
 }
-.input:focus, .select:focus {
+.input:focus, .dropdown-input:focus {
   outline: none;
-}
-.input select, .select select {
-  display: none;
 }
 
 .search-complex {
@@ -549,8 +585,9 @@ body {
   outline: none;
 }
 .search-complex__error {
-  transition: opacity 0.2s;
+  transition: all 0.2s;
   opacity: 0;
+  visibility: hidden;
   position: absolute;
   top: 7rem;
   left: 4rem;
@@ -560,6 +597,7 @@ body {
 }
 .search-complex:has(.search-complex__input:focus:invalid) .search-complex__error {
   opacity: 1;
+  visibility: visible;
 }
 
 .textarea {
