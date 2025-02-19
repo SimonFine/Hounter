@@ -2,7 +2,7 @@
     padding-left: var(--default-left-right-padding);
 
     &__header {
-        padding-right: 12rem;     
+        padding-right: var(--default-left-right-padding);     
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -37,5 +37,11 @@
         padding-bottom: 2rem;
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
+    }
+
+    &__nav {
+        @include respond(phone) {
+            display: none;
+        }
     }
 }

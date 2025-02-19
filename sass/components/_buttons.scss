@@ -73,8 +73,13 @@
     width: 10.2rem;
     height: 3.4rem;
     margin-right: 2.4rem;
-    
+
     @include hover-effect($color-grey1);
+
+    @include respond(phone) {
+        background-color: $color-grey3;
+        height: 4rem;
+    }
 }
 
 .nav-btn-big {
