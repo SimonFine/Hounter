@@ -436,15 +436,20 @@ body {
 }
 .testimonial__card {
   position: absolute;
+  width: 78%;
   bottom: -7.6rem;
   left: 50%;
-  width: 80%;
   transform: translateX(-50%);
   padding: 3.2rem;
   background-color: #ffffff;
   border-radius: 1.6rem;
   box-shadow: 0 8px 3.2rem 0 rgba(12, 21, 55, 0.09);
-  width: 78%;
+}
+@media only screen and (max-width: 570px) {
+  .testimonial__card {
+    width: 90%;
+    bottom: -10rem;
+  }
 }
 .testimonial__user-review {
   display: flex;
@@ -1080,12 +1085,21 @@ body {
 
 .testimonials {
   overflow: hidden;
+  position: relative;
 }
 .testimonials__slider {
   width: 69%;
   padding-top: 50%;
   margin: 0 auto;
   position: relative;
+}
+@media only screen and (max-width: 570px) {
+  .testimonials {
+    padding-bottom: 15rem;
+  }
+  .testimonials__slider {
+    width: 90%;
+  }
 }
 
 .slider-dots {

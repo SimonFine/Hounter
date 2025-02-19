@@ -2,12 +2,22 @@
 
 .testimonials {
     overflow: hidden;
+    position: relative;
+    
     
     &__slider {
         width: 69%;
         padding-top: 50%;
         margin: 0 auto;
         position: relative;
+    }
+    
+    @include respond(phone-small) {
+        padding-bottom: 15rem;
+    
+        &__slider {
+            width: 90%;
+        }
     }
 }
 

@@ -93,15 +93,19 @@
     
     &__card {
         position: absolute;
+        width: 78%;
         bottom: -7.6rem;
         left: 50%;
-        width: 80%;
         transform: translateX(-50%);
         padding: 3.2rem;
         background-color: $color-white;
         border-radius: 1.6rem;
         box-shadow: 0 8px 3.2rem 0 rgba(12, 21, 55, 0.09);
-        width: 78%;
+
+        @include respond(phone-small) {
+            width: 90%;
+            bottom: -10rem;
+        }
     }
 
     &__user-review {
