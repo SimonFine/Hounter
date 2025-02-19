@@ -40,7 +40,7 @@
     }
 
     &__nav {
-        @include respond(phone) {
+        @include respond(phone-big) {
             display: none;
         }
     }

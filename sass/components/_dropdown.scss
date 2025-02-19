@@ -34,7 +34,7 @@
     height: 3.4rem;
     margin-right: 2.4rem;
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         background-color: $color-grey3;
         height: 4rem;
     }
