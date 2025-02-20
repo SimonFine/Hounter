@@ -8,7 +8,7 @@
         &__hidden-icon { display: none; }
     }
     
-    @include respond(tab-port-small) {
+    @include respond(tab-port-medium) {
         &--in-input {
             height: 100%;
             width: 6rem;

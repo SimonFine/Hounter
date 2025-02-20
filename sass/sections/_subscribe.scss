@@ -7,9 +7,7 @@
         height: 31.2rem;
         background: url("/img/subscribe/banner.png");
         background-size: cover;
-        border-radius: 3rem;
-        z-index: -100;
-        
+        border-radius: 3rem;        
     }
 
     &__form {
@@ -25,7 +23,7 @@
     @include respond(phone-small) {
         &__banner {
             & > img {
-                z-index: -10;
+                z-index: 1;
                 opacity: 0.2;
             }
 
@@ -33,6 +31,7 @@
 
         &__form {
             width: 90%;
+            z-index: 100;
         }
     }
 

@@ -208,7 +208,7 @@ body {
 .btn--in-input__hidden-icon {
   display: none;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
   .btn--in-input {
     height: 100%;
     width: 6rem;
@@ -1308,7 +1308,6 @@ body {
   background: url("/img/subscribe/banner.png");
   background-size: cover;
   border-radius: 3rem;
-  z-index: -100;
 }
 .subscribe__form {
   position: absolute;
@@ -1323,11 +1322,12 @@ body {
 }
 @media only screen and (max-width: 570px) {
   .subscribe__banner > img {
-    z-index: -10;
+    z-index: 1;
     opacity: 0.2;
   }
   .subscribe__form {
     width: 90%;
+    z-index: 100;
   }
 }
 .subscribe__left1-pic {
