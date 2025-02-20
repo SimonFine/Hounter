@@ -34,14 +34,15 @@
     width: 50%;
     padding-right: 10rem;
 
+    
+    @include respond(tab-port-medium) {
+        padding-right: 7rem;
+    }
+    
     @include respond(phone-big) {
         width: 100%;
         padding: 0;
         margin-bottom: 6rem;
-    }
-
-    @include respond(tab-port-medium) {
-        padding-right: 7rem;
     }
 
     &__details {
