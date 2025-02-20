@@ -1528,6 +1528,11 @@ body {
   margin-left: 10.6rem;
   display: flex;
 }
+@media only screen and (max-width: 730px) {
+  .form-right__consent {
+    margin-left: 0;
+  }
+}
 
 .form-left, .form-right {
   box-shadow: 0 0.8rem 3.2rem 0 rgba(12, 21, 55, 0.09);
