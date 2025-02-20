@@ -73,5 +73,9 @@
         &__column:not(:last-child) {
             margin-right: 2rem;
         }
+
+        &__blur {
+            display: none;
+        }
     }
 }

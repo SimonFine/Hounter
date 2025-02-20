@@ -1037,6 +1037,9 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .tour__blur {
+    display: none;
+  }
 }
 .tour__blur {
   position: absolute;
@@ -1605,6 +1608,9 @@ body {
   }
   .footer__column:not(:last-child) {
     margin-right: 2rem;
+  }
+  .footer__blur {
+    display: none;
   }
 }
 

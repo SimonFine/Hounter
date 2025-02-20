@@ -7,6 +7,10 @@
     @include respond(phone-big) {
         flex-direction: column;
         align-items: center;
+
+        &__blur {
+            display: none;
+        }
     }
 
     &__blur {
@@ -38,7 +42,7 @@
     @include respond(tab-port-medium) {
         padding-right: 7rem;
     }
-    
+
     @include respond(phone-big) {
         width: 100%;
         padding: 0;
