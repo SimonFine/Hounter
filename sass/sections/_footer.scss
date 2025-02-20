@@ -69,5 +69,9 @@
             width: 100%;
             order: 1;
         }
+
+        &__column:not(:last-child) {
+            margin-right: 2rem;
+        }
     }
 }

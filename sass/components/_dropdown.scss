@@ -35,10 +35,14 @@
     margin-right: 2.4rem;
 
     @include respond(phone-small) {
+        margin-right: .7rem;
+    }
+
+    @include respond(tab-port-medium) {
         margin-right: 1.2rem;
     }
 
-    @include respond(phone-big) {
+    @include respond(tab-port-small) {
         background-color: $color-grey3;
         height: 4rem;
     }

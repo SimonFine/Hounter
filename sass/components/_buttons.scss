@@ -27,7 +27,7 @@
     &--long {
         width: 17.1rem;
 
-        @include respond(phone-big) {
+        @include respond(tab-port-big) {
             width: 6rem;
             text-align: center;
             padding: 1rem;
@@ -35,7 +35,7 @@
             .label-semibold { display: none; }
         }
 
-        @include respond(phone-small) {
+        @include respond(phone-big) {
             width: 17.1rem;
             .label-semibold { display: block; }
         }
@@ -76,6 +76,10 @@
     &:first-child { margin-right: 1.6rem; }
 
     svg { transform: translate(-6%, -6%); }
+
+    @include respond(tab-port-small) {
+        &:first-child { margin-right: .5rem; }
+    }
 }
 
 .nav-btn-small {
@@ -87,13 +91,18 @@
 
     @include hover-effect($color-grey1);
 
-    @include respond(phone-big) {
+    @include respond(tab-port-small) {
         background-color: $color-grey3;
         height: 4rem;
     }
 
-    @include respond(phone-small) {
+    @include respond(tab-port-medium) {
         margin-right: 1.2rem;
+    }
+
+    @include respond(phone-small) {
+        width: 9.9rem;
+        margin-right: .7rem;
     }
 }
 
@@ -102,6 +111,10 @@
     width: 11.8rem;
     height: 4.8rem;
     @include hover-effect($color-primary);
+
+    @include respond(phone-small) {
+        width: 11rem;
+    }
 }
 
 .play-btn {

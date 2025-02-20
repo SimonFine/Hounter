@@ -61,7 +61,7 @@
         list-style: none;
 
         & > li:not(:last-child) {
-            margin-right: 2.7rem;
+            margin-right: min(2.7rem, 3%);
         }
 
         label {

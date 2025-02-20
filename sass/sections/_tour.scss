@@ -4,7 +4,7 @@
     display: flex;
     position: relative;
 
-    @include respond(phone-small) {
+    @include respond(phone-big) {
         flex-direction: column;
         align-items: center;
     }
@@ -34,10 +34,14 @@
     width: 50%;
     padding-right: 10rem;
 
-    @include respond(phone-small) {
+    @include respond(phone-big) {
         width: 100%;
         padding: 0;
         margin-bottom: 6rem;
+    }
+
+    @include respond(tab-port-medium) {
+        padding-right: 7rem;
     }
 
     &__details {
@@ -70,14 +74,10 @@
     flex: 1;
     width: 50%;
     text-align: center;
-
-    @include respond(phone-small) {
-        width: 100%;
-    }
     
     &__video-container {
         margin: 0 auto;
-        width: 47.8rem;
+        width: min(47.8rem, 97%);
         height: 41.6rem;
         position: relative;
         transition: all 5s;
@@ -119,6 +119,20 @@
     &__vase, &__chair {
         width: 9.6rem;
         height: 8rem;
+    }
+
+    @include respond(tab-port-small) {
+        width: 100%;
+
+        &__sofa, &__vase, &__chair {
+            width: 50%;
+            height: 50%;
+        }
+
+        &__vase, &__chair {
+            width: 15%;
+            height: 15%;
+        }
     }
 
     &__checkbox, &__checkbox-close-video { display: none; }

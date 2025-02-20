@@ -12,18 +12,18 @@
         position: relative;
     }
     
-    @include respond(phone-small) {
-        padding-bottom: 15rem;
+    @include respond(phone-big) {
+        padding-bottom: 22.5rem;
     
         &__slider {
-            width: 90%;
+            width: 100%;
         }
     }
 }
 
 .slider-dots {
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

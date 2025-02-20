@@ -7,14 +7,14 @@
         width: 50%;
         background: radial-gradient(circle at left top, #82f7ff 0%, #82ffd2 1%, $color-white 40%);
 
-        @include respond(phone-big) {
+        @include respond(tab-port-small) {
             background-image: 
             linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), 
                 url("/img/hero-section/hero-house.png");
             background-size: cover;
             background-position: center;
             border-bottom-left-radius: 8rem;
-            padding: 0 7rem 10rem;  
+            padding-bottom: 5rem; 
         }
 
         &__content {
@@ -56,7 +56,7 @@
         }
 
         &__cards-copy { left: 124.8rem; }
-        @include respond(phone-big) {
+        @include respond(tab-port-small) {
             display: none;
         }
     }

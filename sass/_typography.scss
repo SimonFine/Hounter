@@ -86,6 +86,10 @@
     &--grey3 { color: $color-grey3; }
 
     &--orange { color: $color-secondary; }
+
+    @include respond(phone-small) {
+        font-size: 1.7rem;
+    }
 }
 
 .label-small {

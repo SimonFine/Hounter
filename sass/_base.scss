@@ -26,7 +26,19 @@ $font-primary: 'Lexend', sans-serif;
 
 //OTHER 
 :root {
-    --default-left-right-padding: 12.4rem;
+    --default-left-right-padding: 12.4rem;    
+}
+
+@include respond(tab-port-big) {
+    :root {
+        --default-left-right-padding: 8.2rem;
+    }
+}
+
+@include respond(tab-port-medium) {
+    :root {
+        --default-left-right-padding: 7rem;
+    }
 }
 
 @include respond(tab-port-small) {
@@ -38,6 +50,12 @@ $font-primary: 'Lexend', sans-serif;
 @include respond(phone-small) {
     :root {
         --default-left-right-padding: 3.1rem;
+    }
+}
+
+@include respond(phone-small-af) {
+    :root {
+        --default-left-right-padding: 1rem;
     }
 }
 
@@ -54,17 +72,20 @@ html {
     font-size: 62.5%;
 
     
-    @include respond(tab-land) { // width < 1200?
-        font-size: 50%; //1 rem = 9px, 9/16 = 50%
+    @include respond(tab-land) {
+        font-size: 50%;
     }
-    @include respond(tab-port-big) { // width < 900?
-        font-size: 42%; //1 rem = 8px, 8/16 = 50%
+    @include respond(tab-port-big) {
+        font-size: 47%;
     }
-    @include respond(tab-port-medium) { // width < 900?
-        font-size: 35%; //1 rem = 8px, 8/16 = 50%
+    @include respond(tab-port-medium) {
+        font-size: 45%;
+    }
+    @include respond(phone-small-af) {
+        font-size: 40%;
     }
     @include respond(big-desktop) {
-        font-size: 80%; //1rem = 14, 14/16
+        font-size: 75%;
     }
 }
 

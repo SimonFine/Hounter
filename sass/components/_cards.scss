@@ -97,14 +97,14 @@
         bottom: -7.6rem;
         left: 50%;
         transform: translateX(-50%);
-        padding: 3.2rem;
+        padding: min(3.2rem, 5%);
         background-color: $color-white;
         border-radius: 1.6rem;
         box-shadow: 0 8px 3.2rem 0 rgba(12, 21, 55, 0.09);
 
-        @include respond(phone-small) {
-            width: 90%;
-            bottom: -10rem;
+        @include respond(phone-big) {
+            width: 100%;
+            bottom: -15rem;
         }
     }
 
